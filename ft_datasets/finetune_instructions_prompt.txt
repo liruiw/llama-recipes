@@ -1,3 +1,2 @@
 Write the pybullet simulation code for the task "TASK_NAME_TEMPLATE" in a python code block.
 ###
-

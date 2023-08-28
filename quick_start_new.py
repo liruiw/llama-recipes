@@ -12,6 +12,15 @@ from transformers import default_data_collator, Trainer, TrainingArguments, Trai
 from contextlib import nullcontext
 from typing import Optional, Dict, Sequence
 import copy
+from transformers import AutoTokenizer
+import argparse
+
+DEFAULT_PAD_TOKEN = "[PAD]"
+IGNORE_INDEX = -100
+B_INST, E_INST = "[INST]", "[/INST]"
+B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
+SPECIAL_TAGS = [B_INST, E_INST, "<<SYS>>", "<</SYS>>"]
+
 
 def format_finetune_prompt(task_name):
     instruction_text = open('ft_datasets/finetune_instructions_prompt.txt').read()
@@ -62,53 +71,30 @@ def smart_tokenizer_and_embedding_resize(
         output_embeddings[-num_new_tokens:] = output_embeddings_avg
 
 
-DEFAULT_PAD_TOKEN = "[PAD]"
-IGNORE_INDEX = -100
-B_INST, E_INST = "[INST]", "[/INST]"
-B_SYS, E_SYS = "<<SYS>>\n", "\n<</SYS>>\n\n"
+def get_prompt(message: str, chat_history: list[tuple[str, str]],
+               system_prompt: str) -> str:
+    texts = [f'<s>[INST] <<SYS>>\n{system_prompt}\n<</SYS>>\n\n']
+    # The first user input is _not_ stripped
+    do_strip = False
+    for user_input, response in chat_history:
+        user_input = user_input.strip() if do_strip else user_input
+        do_strip = True
+        texts.append(f'{user_input} [/INST] {response.strip()} </s><s>[INST] ')
+    message = message.strip() if do_strip else message
+    texts.append(f'{message} [/INST]')
+    return ''.join(texts)
 
-SPECIAL_TAGS = [B_INST, E_INST, "<<SYS>>", "<</SYS>>"]
-
-
-model_id = "codellama_7b"
-
-tokenizer = LlamaTokenizer.from_pretrained(model_id)
-
-model = LlamaForCausalLM.from_pretrained(model_id, load_in_8bit=True, device_map='auto', torch_dtype=torch.float16)
-# okenizer.add_special_tokens({'pad_token': DEFAULT_PAD_TOKEN})
-if tokenizer.pad_token is None:
-    smart_tokenizer_and_embedding_resize(
-            special_tokens_dict=dict(pad_token=DEFAULT_PAD_TOKEN),
-            tokenizer=tokenizer,
-            model=model,
-        )
-
-train_dataset = get_preprocessed_dataset(tokenizer, gensim_dataset, 'train')
-
-
-# data = ({"messages": [{"role": "system", "content": ""},
-#                          {"role": "user", "content": prompt},
-#                          {"role": "assistant", "content": completion}]})
-system = "Write the pybullet simulation reset function for the task [align-corner]. Provide answers in a python code block starting with ```"
-# user = format_finetune_prompt("build-car")
-prompt = f"<s>[INST] \\n\\n{system}[/INST]"
-model_input = tokenizer.encode(
-                f"{B_INST} {system.strip()} {E_INST}",
-                bos=True,
-                eos=False)
-
-# <<SYS>>\\n{system}\\n<</SYS>>
-# prompt = user
-# model_input = tokenizer(prompt, return_tensors="pt", add_special_tokens=False).to("cuda")
-print("prompt:===\n", prompt)
-# model_input = tokenizer(prompt, return_tensors="pt").to("cuda")
-
-model.eval()
-with torch.no_grad():
-    print(tokenizer.decode(model.generate(**model_input, max_new_tokens=1000, temperature=0.2, top_p=0.95)[0], skip_special_tokens=True))
-
-
-model.train()
+def get_generator_input(inputs):
+    return dict(
+        inputs,
+        do_sample=True,
+        temperature=0.1,
+        top_p=0.9,
+        num_return_sequences=1,
+        top_k=50,
+        max_length=512,
+        num_beams=1
+    )
 
 def create_peft_config(model):
     from peft import (
@@ -133,21 +119,8 @@ def create_peft_config(model):
     model.print_trainable_parameters()
     return model, peft_config
 
-# create peft config
-model, lora_config = create_peft_config(model)
-enable_profiler = False
-output_dir = "tmp/llama-output"
-
-config = {
-    'lora_config': lora_config,
-    'learning_rate': 1e-4,
-    'num_train_epochs': 1,
-    'gradient_accumulation_steps': 2,
-    'per_device_train_batch_size': 2,
-    'gradient_checkpointing': False,
-}
-
 # Set up profiler
+enable_profiler = False
 if enable_profiler:
     wait, warmup, active, repeat = 1, 1, 2, 1
     total_steps = (wait + warmup + active) * (1 + repeat)
@@ -171,6 +144,49 @@ else:
     profiler = nullcontext()
 
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--pretrained_model", "-p", type=str, default='CodeLlama-7b-Instruct-hf')
+parser.add_argument("--epoch", "-e", type=int, default=1)
+# davinci:ft-mit-cal:gensim-2023-08-06-16-00-56
+args = parser.parse_args()
+
+## RUN
+model_id =  "codellama/" + args.pretrained_model
+tokenizer = AutoTokenizer.from_pretrained(model_id, model_max_length=1025) # 500
+model = LlamaForCausalLM.from_pretrained(model_id, load_in_8bit=True, device_map='auto', torch_dtype=torch.float16) # load_in_8bit=True, 
+
+if tokenizer.pad_token is None:
+    smart_tokenizer_and_embedding_resize(
+            special_tokens_dict=dict(pad_token=DEFAULT_PAD_TOKEN),
+            tokenizer=tokenizer,
+            model=model,
+        )
+    # tokenizer.add_special_tokens({'pad_token': DEFAULT_PAD_TOKEN})
+
+
+prompt_input = "Write the pybullet simulation task class [align-corner]. Provide answers in a python code block starting with ```"
+prompt = get_prompt(prompt_input, [], '')
+model_input = tokenizer([prompt], return_tensors='pt', add_special_tokens=False).to('cuda')
+model_input = get_generator_input(model_input)
+
+model.eval()
+with torch.no_grad():
+    print("Debug Result:", tokenizer.decode(model.generate(**model_input)[0], skip_special_tokens=True))
+model.train()
+
+train_dataset = get_preprocessed_dataset(tokenizer, gensim_dataset, 'train')
+
+# create peft config
+model, lora_config = create_peft_config(model)
+output_dir = "tmp/llama-output"
+config = {
+    'lora_config': lora_config,
+    'learning_rate': 1e-4,
+    'num_train_epochs': args.epoch,
+    'gradient_accumulation_steps': 2,
+    'per_device_train_batch_size': 2,
+    'gradient_checkpointing': False,
+}
 
 
 # Training
@@ -205,8 +221,13 @@ with profiler:
     # Start training
     trainer.train()
 
-model.save_pretrained(output_dir)
-
+# model.eval()
+# prompt = get_prompt(prompt_input, [], '')
+# model_input = tokenizer([prompt], return_tensors='pt', add_special_tokens=False).to('cuda')
+# model_input = get_generator_input(model_input)
+print("begin finetuned model eval ====\n")
 model.eval()
 with torch.no_grad():
-    print(tokenizer.decode(model.generate(**model_input, max_new_tokens=1000)[0], skip_special_tokens=True))
+    print("Debug Result:", tokenizer.decode(model.generate(**model_input)[0], skip_special_tokens=True))
+
+model.save_pretrained(output_dir)

@@ -1,11 +1,6 @@
 prompt,completion
-"Write the pybullet simulation code for the task ""align-box-corner"" in a python code block.
-###
-
-"," 
- align-box-corner: {'assets-used': ['box/box-template.urdf', 'corner/corner-template.urdf'], 'task-description': 'pick up the randomly sized box and align one of its corners to the L-shaped marker on the tabletop..', 'task-name': 'align-box-corner'}```
-
-###
+"Write the pybullet simulation task class [align-box-corner]. Provide answers in a python code block starting with ```
+","
 ```python
 import os
 import numpy as np
@@ -70,13 +65,8 @@ class AlignBoxCorner(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""align-rope"" in a python code block.
-###
-
-"," 
- align-rope: {'assets-used': ['square/square-template.urdf'], 'task-description': 'manipulate a deformable rope to connect its end-points between two corners of a 3-sided square.', 'task-name': 'align-rope'}```
-
-###
+"Write the pybullet simulation task class [align-rope]. Provide answers in a python code block starting with ```
+","
 ```python
 import os
 
@@ -151,13 +141,8 @@ class AlignRope(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""assembling-kits"" in a python code block.
-###
-
-"," 
- assembling-kits: {'assets-used': ['kitting/kit.urdf', 'kitting/object-template.urdf'], 'task-description': 'pick up different objects and arrange them on a board marked with corresponding silhouettes.', 'task-name': 'assembling-kits'}```
-
-###
+"Write the pybullet simulation task class [assembling-kits]. Provide answers in a python code block starting with ```
+","
 ```python
 import os
 
@@ -224,13 +209,8 @@ class AssemblingKits(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""manipulating-rope"" in a python code block.
-###
-
-"," 
- manipulating-rope: {'assets-used': ['square/square-template.urdf'], 'task-description': 'rearrange a deformable rope such that it connects the two endpoints of a 3-sided square.', 'task-name': 'manipulating-rope'}```
-
-###
+"Write the pybullet simulation task class [manipulating-rope]. Provide answers in a python code block starting with ```
+","
 ```python
 import os
 
@@ -287,13 +267,8 @@ class ManipulatingRope(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""packing-boxes"" in a python code block.
-###
-
-"," 
- packing-boxes: {'assets-used': ['container/container-template.urdf', 'box/box-template.urdf'], 'task-description': 'pick up randomly sized boxes and place them tightly into a container.', 'task-name': 'packing-boxes'}```
-
-###
+"Write the pybullet simulation task class [packing-boxes]. Provide answers in a python code block starting with ```
+","
 ```python
 import os
 
@@ -380,13 +355,8 @@ class PackingBoxes(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""palletizing-boxes"" in a python code block.
-###
-
-"," 
- palletizing-boxes: {'assets-used': ['pallet/pallet.urdf', 'box/box-template.urdf'], 'task-description': 'pick up homogeneous fixed-sized boxes and stack them in transposed layers on the pallet.', 'task-name': 'palletizing-boxes'}```
-
-###
+"Write the pybullet simulation task class [palletizing-boxes]. Provide answers in a python code block starting with ```
+","
 ```python
 import os
 import numpy as np
@@ -476,13 +446,8 @@ class PalletizingBoxes(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""place-red-in-green"" in a python code block.
-###
-
-"," 
- place-red-in-green: {'assets-used': ['bowl/bowl.urdf', 'stacking/block.urdf'], 'task-description': 'pick up the red blocks and place them into the green bowls amidst other objects.', 'task-name': 'place-red-in-green'}```
-
-###
+"Write the pybullet simulation task class [place-red-in-green]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -549,13 +514,8 @@ class PlaceRedInGreen(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""stack-block-pyramid"" in a python code block.
-###
-
-"," 
- stack-block-pyramid: {'assets-used': ['stacking/stand.urdf', 'stacking/block.urdf'], 'task-description': 'sequentially stack 6 blocks into a pyramid of 3-2-1 with rainbow colored ordering.', 'task-name': 'stack-block-pyramid'}```
-
-###
+"Write the pybullet simulation task class [stack-block-pyramid]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -620,13 +580,8 @@ class StackBlockPyramid(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""sweeping-piles"" in a python code block.
-###
-
-"," 
- sweeping-piles: {'assets-used': ['zone/zone.urdf', 'block/small.urdf'], 'task-description': 'push piles of small objects into a target goal zone marked on the tabletop.', 'task-name': 'sweeping-piles'}```
-
-###
+"Write the pybullet simulation task class [sweeping-piles]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks import primitives
@@ -664,13 +619,8 @@ class SweepingPiles(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""build-wheel"" in a python code block.
-###
-
-"," 
- build-wheel: {'task-name': 'build-wheel', 'task-description': 'Construct a wheel using blocks and a sphere. First, position eight blocks in a circular layout on the tabletop. Each block should be touching its two neighbors and colored in alternating red and blue. Then place a green sphere in the center of the circular layout, completing the wheel.', 'assets-used': ['block/block.urdf', 'sphere/sphere.urdf']}```
-
-###
+"Write the pybullet simulation task class [build-wheel]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -731,13 +681,8 @@ class BuildWheel(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""push-piles-into-letter"" in a python code block.
-###
-
-"," 
- push-piles-into-letter: {'task-name': 'push-piles-into-letter', 'task-description': 'Push piles of small objects into a target goal zone shaped in some letters.', 'assets-used': ['kitting/kit.urdf', 'kitting/object-template-nocollision.urdf']}```
-
-###
+"Write the pybullet simulation task class [push-piles-into-letter]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -798,13 +743,8 @@ class BuildWheel(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""connect-boxes-with-rope"" in a python code block.
-###
-
-"," 
- connect-boxes-with-rope: {'task-name': 'connect-boxes-with-rope', 'task-description': 'Connect two colored blocks with ropes.', 'assets-used': ['block/block.urdf']}```
-
-###
+"Write the pybullet simulation task class [connect-boxes-with-rope]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -858,13 +798,8 @@ class ConnectBoxesWithRope(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""build-car"" in a python code block.
-###
-
-"," 
- build-car: {'task-name': 'build-car', 'task-description': 'Construct a simple car structure using blocks and cylinders.', 'assets-used': ['block/block.urdf', 'ball/ball-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [build-car]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -964,13 +899,8 @@ class BuildCar(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""manipulating-two-ropes"" in a python code block.
-###
-
-"," 
- manipulating-two-ropes: {'task-name': 'manipulating-two-ropes', 'task-description': 'rearrange the red and blue deformable ropes such that it connects the two endpoints of a 3-sided square of corresponding color.', 'assets-used': ['square/square-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [manipulating-two-ropes]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1031,13 +961,8 @@ class ManipulatingTwoRopes(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""insert-sphere-into-container"" in a python code block.
-###
-
-"," 
- insert-sphere-into-container: {'task-name': 'insert-sphere-into-container', 'task-description': 'Pick up a blue sphere and place it into an open container.', 'assets-used': ['sphere/sphere.urdf', 'container/container-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [insert-sphere-into-container]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1088,13 +1013,8 @@ class InsertSphereIntoContainer(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""insert-cylinder-in-container"" in a python code block.
-###
-
-"," 
- insert-cylinder-in-container: {'task-name': 'insert-cylinder-in-container', 'task-description': 'Pick up a blue cylindrical block and place it into an empty container.', 'assets-used': ['cylinder/cylinder-template.urdf', 'container/container-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [insert-cylinder-in-container]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1145,13 +1065,8 @@ class InsertSphereIntoContainer(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""build-bridge"" in a python code block.
-###
-
-"," 
- build-bridge: {'task-name': 'build-bridge', 'task-description': 'Construct a bridge using two yellow blocks and three blue blocks. Firstly, place the two yellow blocks on each of the two bases parallel to each other with a fair amount of space in between. Then, place the blue block horizontally on top of the yellow blocks.', 'assets-used': ['block/block.urdf', 'ball/ball-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [build-bridge]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1237,13 +1152,8 @@ class BuildBridge(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""insert-ell-in-fixture"" in a python code block.
-###
-
-"," 
- insert-ell-in-fixture: {'task-name': 'insert-ell-in-fixture', 'task-description': 'Pick up an Ell shaped block and insert it into a fixture on the tabletop.', 'assets-used': ['insertion/ell.urdf', 'insertion/fixture.urdf']}```
-
-###
+"Write the pybullet simulation task class [insert-ell-in-fixture]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1329,13 +1239,8 @@ class BuildBridge(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""build-block-tower-on-pallet"" in a python code block.
-###
-
-"," 
- build-block-tower-on-pallet: {'task-name': 'build-block-tower-on-pallet', 'task-description': 'Pick up six blocks in two colors (three red and three blue) and stack them in alternating colors on the pallet. The tower should start with a red block at the bottom.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [build-block-tower-on-pallet]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1421,13 +1326,8 @@ class BuildBridge(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-tower"" in a python code block.
-###
-
-"," 
- color-coordinated-tower: {'task-name': 'color-coordinated-tower', 'task-description': 'Pick up blocks of five different colors (red, blue, green, yellow, and orange) and stack them on a pallet in the specific sequence. The bottom of the tower should start with a red block followed by a blue, green, yellow and finally an orange block at the top.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-tower]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1513,13 +1413,8 @@ class BuildBridge(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""stack-blocks-in-container"" in a python code block.
-###
-
-"," 
- stack-blocks-in-container: {'task-name': 'stack-blocks-in-container', 'task-description': 'Pick up five blocks of different colors (red, blue, green, yellow, and orange) and stack them in a container in a specific sequence. The bottom of the stack should start with a red block followed by a blue, green, yellow and finally an orange block at the top.', 'assets-used': ['block/block.urdf', 'container/container-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [stack-blocks-in-container]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1575,13 +1470,8 @@ class StackBlocksInContainer(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-block-tower"" in a python code block.
-###
-
-"," 
- color-coordinated-block-tower: {'task-name': 'color-coordinated-block-tower', 'task-description': 'On a tabletop, there are fifteen blocks of three different colors (five red, five blue, and five green). The task is to pick up these blocks and stack them onto three different stands on the table, creating three different towers. Each stand should have a tower of the same color blocks with five blocks each. The blocks in each tower should be stacked in a way that the block on top is slightly displaced in relation to the block underneath, creating a spiral-like effect. The challenge lies in the color-based sorting, precise placement for achieving the spiral effect and careful stacking of the blocks to avoid toppling.', 'assets-used': ['block/block.urdf', 'stacking/stand.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-block-tower]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1650,13 +1540,8 @@ class ColorCoordinatedBlockTower(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-structured-block-tower"" in a python code block.
-###
-
-"," 
- color-structured-block-tower: {'task-name': 'color-structured-block-tower', 'task-description': 'Construct a tower using six blocks: two red, two blue, and two green. The tower should be built in the order of a red block at the base, followed by a blue, then green, then red, blue and green at the top.', 'assets-used': ['block/block.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-structured-block-tower]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1713,13 +1598,8 @@ class ColorStructuredBlockTower(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""stack-color-coordinated-blocks"" in a python code block.
-###
-
-"," 
- stack-color-coordinated-blocks: {'task-name': 'stack-color-coordinated-blocks', 'task-description': 'Pick up six blocks of different colors (red, blue, green, yellow, orange, and purple) and stack them on a pallet in two separate stacks. The first stack should be red at the bottom, blue in the middle, and green at top. The second stack should be yellow at the bottom, orange in the middle, and purple at the top.', 'assets-used': ['box/box-template.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [stack-color-coordinated-blocks]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1792,13 +1672,8 @@ class StackColorCoordinatedBlocks(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""assemble-single-car"" in a python code block.
-###
-
-"," 
- assemble-single-car: {'task-name': 'assemble-single-car', 'task-description': 'Build a mini car using a large blue box as the body, a smaller red box on top as the roof, and two tiny green boxes on the sides as wheels.', 'assets-used': ['box/box-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [assemble-single-car]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1864,13 +1739,8 @@ class AssembleSingleCar(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""sort-and-stack-clr-blocks"" in a python code block.
-###
-
-"," 
- sort-and-stack-clr-blocks: {'task-name': 'sort-and-stack-clr-blocks', 'task-description': 'Pick up four blocks of different colors (red, blue, green, yellow) and place them into separate corners of a pallet. After sorting, stack them in a specific sequence on top of the pallet. The bottom of the stack should start with a green block followed by a blue, then red, and finally a yellow block at the top.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [sort-and-stack-clr-blocks]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -1937,13 +1807,8 @@ class SortAndStackClrBlocks(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""create-pyramid-blocks-and-container"" in a python code block.
-###
-
-"," 
- create-pyramid-blocks-and-container: {'task-name': 'create-pyramid-blocks-and-container', 'task-description': 'Create a pyramid structure using six blocks of three different colors (two red, two green, and two blue) inside a container. The first layer of the pyramid should consist of the two green and one blue block. The second layer should be the two red blocks, and the last block which is the top of the pyramid should be the remaining blue block.', 'assets-used': ['container/container-template.urdf', 'block/block.urdf']}```
-
-###
+"Write the pybullet simulation task class [create-pyramid-blocks-and-container]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2016,13 +1881,8 @@ class CreatePyramidBlocksAndContainer(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""Four-corner-pyramid-challenge"" in a python code block.
-###
-
-"," 
- Four-corner-pyramid-challenge: {'task-name': 'Four-corner-pyramid-challenge', 'task-description': ""A tabletop is partitioned into four different zones using the 'zone/zone.urdf' asset. In each zone, there are four blocks of different colors (red, blue, green, and yellow). The task is to construct a pyramid of blocks in each zone using the 'block/block.urdf' asset such that the sequence of blocks from bottom to top is red, blue, green, and yellow. The task is challenging because it requires precise stack control and color recognition."", 'assets-used': ['block/block.urdf', 'zone/zone.urdf']}```
-
-###
+"Write the pybullet simulation task class [Four-corner-pyramid-challenge]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2088,13 +1948,8 @@ class FourCornerPyramidChallenge(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""colorful-block-tower-on-cylinder-base"" in a python code block.
-###
-
-"," 
- colorful-block-tower-on-cylinder-base: {'task-name': 'colorful-block-tower-on-cylinder-base', 'task-description': 'Construct a tower using four blocks of different colors (red, blue, green, and yellow) on a placed cylindrical base at the corner of the tabletop. The sequence from bottom to top should be red, blue, green, and yellow.', 'assets-used': ['block/block.urdf', 'corner/corner-template.urdf', 'cylinder/cylinder-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [colorful-block-tower-on-cylinder-base]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2154,13 +2009,8 @@ class ColorfulBlockTowerOnCylinderBase(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""construct-corner-blocks"" in a python code block.
-###
-
-"," 
- construct-corner-blocks: {'task-name': 'construct-corner-blocks', 'task-description': 'Create a corner structure using four blocks. Two red blocks form the base, one on each side of the corner, followed by a green block that is positioned on the red blocks at the corner junction, and finally a blue block on top of the green one. The overall structure forms a 3-D corner.', 'assets-used': ['block/block.urdf', 'corner/corner-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [construct-corner-blocks]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2225,13 +2075,8 @@ class ConstructCornerBlocks(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""corner-sort-cylinders"" in a python code block.
-###
-
-"," 
- corner-sort-cylinders: {'task-name': 'corner-sort-cylinders', 'task-description': 'Pick up cylinders of four different colors (red, blue, green, yellow) and place them into four corners accordingly marked on the tabletop. The corner is designed as a 2-block-size square where only one cylinder can fit. The task is challenging due to precise placement and the need for identifying the corners accurately.', 'assets-used': ['corner/corner-template.urdf', 'cylinder/cylinder-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [corner-sort-cylinders]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2291,13 +2136,8 @@ class CornerSortCylinders(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""sorting-blocks-into-pallets"" in a python code block.
-###
-
-"," 
- sorting-blocks-into-pallets: {'task-name': 'sorting-blocks-into-pallets', 'task-description': 'Pick up blocks of four different colors (red, blue, green, yellow) and place them into four separate pallets of matching color. The pallets are placed in a row and the blocks are scattered randomly on the table.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [sorting-blocks-into-pallets]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2353,13 +2193,8 @@ class SortingBlocksIntoPallets(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""sort-and-assemble-block-castle"" in a python code block.
-###
-
-"," 
- sort-and-assemble-block-castle: {'task-name': 'sort-and-assemble-block-castle', 'task-description': 'On a tabletop, there are twelve blocks of three different colors (four red, four green, and four blue). The task involves sorting the blocks according to the color in three marked zones on the tabletop and subsequently constructing a castle in each zone. In each castle, the first layer should consist of the two blocks of the same color, followed by the second layer of one block and finally the last block on the top forming a castle-like structure. The challenge lies in the color-based sorting and careful assembly of the blocks to avoid toppling.', 'assets-used': ['block/block.urdf', 'zone/zone.urdf']}```
-
-###
+"Write the pybullet simulation task class [sort-and-assemble-block-castle]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2423,13 +2258,8 @@ class SortAndAssembleBlockCastle(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""vertical-insertion-blocks"" in a python code block.
-###
-
-"," 
- vertical-insertion-blocks: {'task-name': 'vertical-insertion-blocks', 'task-description': 'The task involves picking up four color specific blocks (red, blue, green, and yellow) and inserting each block into four differently colored stands set upright on the tabletop. The block-colored with red needs to be inserted into the red-colored stand, and the same sequence is maintained for each colored blocks and stands. This task is challenging due to the requirement for precise insertion and the manipulation of vertical objects.', 'assets-used': ['stacking/block.urdf', 'stacking/stand.urdf']}```
-
-###
+"Write the pybullet simulation task class [vertical-insertion-blocks]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2488,13 +2318,8 @@ class VerticalInsertionBlocks(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-sphere-insertion"" in a python code block.
-###
-
-"," 
- color-coordinated-sphere-insertion: {'task-name': 'color-coordinated-sphere-insertion', 'task-description': 'There are four spheres and four boxes of different colors (red, blue, green, and yellow). Each sphere is inside a box, but not corresponding to the color of the box. The task is to pick up each sphere and place it in the box of the same color. The challenge lies in the precise placement and color matching.', 'assets-used': ['sphere/sphere.urdf', 'box/box-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-sphere-insertion]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2555,13 +2380,8 @@ class ColorCoordinatedSphereInsertion(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""block-pyramid-with-limited-space"" in a python code block.
-###
-
-"," 
- block-pyramid-with-limited-space: {'task-name': 'block-pyramid-with-limited-space', 'task-description': 'On a tabletop, there are twelve blocks of four different colors (three red, three green, three blue, three yellow). Three zones are defined, each with a triangle-shaped border that is marked. The task involves sorting the blocks according to the color into three zones on the tabletop and constructing a pyramid in each zone. In each pyramid, the base should contain two blocks of the same color, followed by the second layer of one block, thus forming a pyramid-like structure. However, the third yellow block should be placed in the center of the zones forming a smaller pyramid. The challenge lies in the color-based sorting, careful assembly of the blocks to avoid topple, and limited space in the zones which adds to the complexity.', 'assets-used': ['block/block.urdf', 'zone/zone.urdf']}```
-
-###
+"Write the pybullet simulation task class [block-pyramid-with-limited-space]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2626,13 +2446,8 @@ class BlockPyramidWithLimitedSpace(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""build-cylinder-structure"" in a python code block.
-###
-
-"," 
- build-cylinder-structure: {'task-name': 'build-cylinder-structure', 'task-description': ""Using four colored cylinders (red, blue, green, yellow), construct a structure atop a square base. The red and blue cylinders should be sealed by the square base side by side, while the green cylinder should be on top of the blue one, and the yellow one on top of the red. The final look should resemble the letter 'H'."", 'assets-used': ['cylinder/cylinder-template.urdf', 'square/square-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [build-cylinder-structure]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2704,13 +2519,8 @@ class BuildCylinderStructure(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""insert-blocks-lineup"" in a python code block.
-###
-
-"," 
- insert-blocks-lineup: {'task-name': 'insert-blocks-lineup', 'task-description': 'On the tabletop, there are four different color blocks (red, blue, green, and yellow), and four fixtures in corresponding colors. The task is to pick up each block and insert it into the corresponding color fixture. However, the fixtures are arranged in a straight line, with a line of small blocks serving as barrier between the fixtures and the colored blocks initially scattered on the table, providing a challenge in precise navigation and placement.', 'assets-used': ['block/block.urdf', 'insertion/fixture.urdf', 'block/small.urdf']}```
-
-###
+"Write the pybullet simulation task class [insert-blocks-lineup]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2773,13 +2583,8 @@ class InsertBlocksLineup(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-specific-container-fill"" in a python code block.
-###
-
-"," 
- color-specific-container-fill: {'task-name': 'color-specific-container-fill', 'task-description': 'Arrange four colored blocks (red, blue, green, and yellow) around a pallet. Then, pick up these blocks and place them inside a container marked in the same color. The task requires precise placement, color matching, and an understanding of spatial structures.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf', 'container/container-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-specific-container-fill]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2847,13 +2652,8 @@ class ColorSpecificContainerFill(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""multicolor-block-bridge"" in a python code block.
-###
-
-"," 
- multicolor-block-bridge: {'task-name': 'multicolor-block-bridge', 'task-description': 'Build a bridge by stacking three red, three blue, and three green blocks on a pallet. Arrange in a sequence from left to right: red, blue, and green. Then, place three cylinders of corresponding colors on top of the stacked blocks, forming a bridge. The cylinders should roll from the top block to the pallet, creating a challenge of precision and control.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf', 'cylinder/cylinder-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [multicolor-block-bridge]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -2931,13 +2731,8 @@ class MulticolorBlockBridge(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""pyramid-blocks-assemble"" in a python code block.
-###
-
-"," 
- pyramid-blocks-assemble: {'task-name': 'pyramid-blocks-assemble', 'task-description': 'Construct a pyramid using nine blocks in a specific color order on a pallet. The bottom layer should contain five blocks: red, blue, green, yellow, and orange (in that order from left to right). The middle layer should consist of three blocks: yellow, red, and blue (from left to right). The top layer should contain a single green block. The pyramid requires careful placement and color matching.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [pyramid-blocks-assemble]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3004,13 +2799,8 @@ class PyramidBlocksAssemble(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""place-ball-in-elevated-bowl"" in a python code block.
-###
-
-"," 
- place-ball-in-elevated-bowl: {'task-name': 'place-ball-in-elevated-bowl', 'task-description': 'The primary objective of the task is to pick up a red ball and carefully place it into a bowl, which is positioned on a raised platform that is surrounded by small blocks. The challenge lies in precise navigation, maintaining a hold of the ball, and avoiding the surrounding blocks.', 'assets-used': ['ball/ball-template.urdf', 'bowl/bowl.urdf', 'block/small.urdf']}```
-
-###
+"Write the pybullet simulation task class [place-ball-in-elevated-bowl]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3068,13 +2858,8 @@ class PlaceBallInElevatedBowl(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""align-balls-in-colored-zones"" in a python code block.
-###
-
-"," 
- align-balls-in-colored-zones: {'task-name': 'align-balls-in-colored-zones', 'task-description': 'There are six balls of different colors (red, blue, green, yellow, orange, and purple) and six zones correspondingly colored. The task is to pick up each ball and place it in the zone of the same color, arranging the balls in a straight line. The challenge lies in the precise placement and color matching.', 'assets-used': ['ball/ball-template.urdf', 'zone/zone.urdf']}```
-
-###
+"Write the pybullet simulation task class [align-balls-in-colored-zones]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3133,13 +2918,8 @@ class AlignBallsInColoredZones(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-cylinder-tower"" in a python code block.
-###
-
-"," 
- color-coordinated-cylinder-tower: {'task-name': 'color-coordinated-cylinder-tower', 'task-description': 'Stack cylinders of four different colors (red, blue, green, yellow) on top of each other on a square stand in a specific sequence. The bottom of the stack should start with a blue cylinder, follow by a green cylinder, then a red one, and finally a yellow cylinder at the top. Each cylinder has to be aligned correctly to avoid falling.', 'assets-used': ['cylinder/cylinder-template.urdf', 'stacking/stand.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-cylinder-tower]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3197,13 +2977,8 @@ class ColorCoordinatedCylinderTower(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""symmetric-block-bridge-construction"" in a python code block.
-###
-
-"," 
- symmetric-block-bridge-construction: {'task-name': 'symmetric-block-bridge-construction', 'task-description': 'Create a symmetrical bridge-shaped structure on a stand using eight blocks of two different colors (four red and four blue). Start by placing two red blocks side by side at the center of the stand to form the base of the bridge. Then, take a blue block and place it on top of the red blocks, followed by another red block on top of the blue one, and this pattern continues till you exhaust all the blocks. The final structure should be a bridge with alternating colors (red, blue, red, blue). The challenge lies in ensuring symmetry and balancing the blocks without making them fall.', 'assets-used': ['stacking/stand.urdf', 'block/block-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [symmetric-block-bridge-construction]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3295,13 +3070,8 @@ class SymmetricBlockBridgeConstruction(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""sphere-align-stand"" in a python code block.
-###
-
-"," 
- sphere-align-stand: {'task-name': 'sphere-align-stand', 'task-description': 'On a table there are five differently colored stands and five spheres. The task involves picking up each sphere and placing it on the stand of the matching color. The task is challenging due to the precision required in picking up and placing the spheres, and the color coordination.', 'assets-used': ['stacking/stand.urdf', 'sphere/sphere.urdf']}```
-
-###
+"Write the pybullet simulation task class [sphere-align-stand]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3360,13 +3130,8 @@ class SphereAlignStand(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""construct-colorful-arch"" in a python code block.
-###
-
-"," 
- construct-colorful-arch: {'task-name': 'construct-colorful-arch', 'task-description': 'Construct an arch using six blocks: three red, and three blue. Place two red blocks on the tabletop parallel to each other, then place a blue block on top of the red blocks to form a basic arch. Repeat the process by placing a red block on each side of the base arch and bridge them with the last blue block. Finally, place the last two red blocks on top of the second layer of the red blocks, on either side. The overall structure forms a colorful 3D arch.', 'assets-used': ['block/block.urdf']}```
-
-###
+"Write the pybullet simulation task class [construct-colorful-arch]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3434,13 +3199,8 @@ class ConstructColorfulArch(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-sorted-container-stack"" in a python code block.
-###
-
-"," 
- color-sorted-container-stack: {'task-name': 'color-sorted-container-stack', 'task-description': 'The challenge is to stack four differently colored blocks (red, blue, green, yellow) inside a container. These blocks are initially placed inside two separate bowls. The red and blue blocks are in one bowl, the yellow and green blocks are in another. The robot has to pick up the blocks from the two bowls and stack them inside the container in the specific order: red, blue, green, then yellow.', 'assets-used': ['bowl/bowl.urdf', 'container/container-template.urdf', 'block/block.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-sorted-container-stack]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3503,13 +3263,8 @@ class ColorSortedContainerStack(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""align-spheres-in-colored-zones"" in a python code block.
-###
-
-"," 
- align-spheres-in-colored-zones: {'task-name': 'align-spheres-in-colored-zones', 'task-description': 'There are four spheres of different colors (red, blue, green, yellow) positioned randomly on the table along with four zones marked with matching colors. The task is to pick up each sphere and place it into the matching colored zone with precise placement.', 'assets-used': ['sphere/sphere-template.urdf', 'zone/zone.urdf']}```
-
-###
+"Write the pybullet simulation task class [align-spheres-in-colored-zones]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3568,13 +3323,8 @@ class AlignSpheresInColoredZones(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""sort-insert-color-coordinated-blocks"" in a python code block.
-###
-
-"," 
- sort-insert-color-coordinated-blocks: {'task-name': 'sort-insert-color-coordinated-blocks', 'task-description': 'There are six blocks of three different colors (two red, two blue, and two green), two red containers, two blue containers, and two green containers scattered on the table. The task is to sort the blocks by their colors and place (insert) them into the containers of the matching color. Two blocks of the same color should go into two different containers of the same color. The challenge lies in the color-based sorting and insertion of the blocks into the containers.', 'assets-used': ['block/block.urdf', 'container/container-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [sort-insert-color-coordinated-blocks]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3632,13 +3382,8 @@ class SortInsertColorCoordinatedBlocks(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-ordered-insertion"" in a python code block.
-###
-
-"," 
- color-ordered-insertion: {'task-name': 'color-ordered-insertion', 'task-description': 'There are four differently-colored ell objects (red, blue, green, yellow) and a corresponding set of color-coded fixtures. The task involves picking up each ell object and inserting it into the matching color fixture in a specific order: from left to right, insert red, blue, green, and finally yellow. The challenge lies in the precise manipulation of the ell objects and the color-coordination required. The fixtures are arranged in a straight line, and can only be approached from one direction, demanding careful navigation.', 'assets-used': ['insertion/ell.urdf', 'insertion/fixture.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-ordered-insertion]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3695,13 +3440,8 @@ class ColorOrderedInsertion(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-insertion"" in a python code block.
-###
-
-"," 
- color-coordinated-insertion: {'task-name': 'color-coordinated-insertion', 'task-description': 'There are three insertion fixtures and three ell shaped blocks of different colors (red, blue, green) on the table top. The task is to pick up the ell shaped blocks and insert each one of them into the fixture of the same color. However, the ell blocks should be inserted in a specific sequence - red first, then blue, and finally green. This task is challenging due to the precision required for insertion and the need for color coordination and sequencing.', 'assets-used': ['insertion/ell.urdf', 'insertion/fixture.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-insertion]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3768,13 +3508,8 @@ class ColorCoordinatedInsertion(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""cylinder-stand-alignment"" in a python code block.
-###
-
-"," 
- cylinder-stand-alignment: {'task-name': 'cylinder-stand-alignment', 'task-description': 'Arrange four colored cylinders (red, blue, green, yellow) in order of their colors on four stands of matching color. However, the stands are placed in a random order on the table, which increases the complexity of the task as it requires careful planning and color matching.', 'assets-used': ['cylinder/cylinder-template.urdf', 'stacking/stand.urdf']}```
-
-###
+"Write the pybullet simulation task class [cylinder-stand-alignment]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3837,13 +3572,8 @@ class CylinderStandAlignment(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-sorted-block-race"" in a python code block.
-###
-
-"," 
- color-sorted-block-race: {'task-name': 'color-sorted-block-race', 'task-description': 'On one end of a tabletop, there are six blocks in two colors (three red and three blue). On the other end of the tabletop, two sets of three small marked zones are arranged in a straight line, one set for blue and one set for red. The task involves picking up one block at a time and placing it in the corresponding colored zone in a sequence from the bottom end zone to the top end zone. The blocks must be placed following the rule: the three colored blocks must be transported consecutively, e.g., first place all three blue blocks and then place all three red blocks. The challenge lies in careful transportation and placement of the blocks and follows the specific rule.', 'assets-used': ['block/block.urdf', 'zone/zone.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-sorted-block-race]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3899,13 +3629,8 @@ class ColorSortedBlockRace(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""multi-level-block-construction"" in a python code block.
-###
-
-"," 
- multi-level-block-construction: {'task-name': 'multi-level-block-construction', 'task-description': 'Construct a two-level structure on a pallet using four blocks: two red and two blue. The lower level should be a rectangle created by placing the red blocks side by side. The upper level is made up by placing the blue blocks placed on top of the red blocks creating a line aligned perpendicular to the red blocks. The challenge lies in the precise placement of blocks, maintaining balance of the structure, and correct color arrangement.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [multi-level-block-construction]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -3967,13 +3692,8 @@ class MultiLevelBlockConstruction(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-blocks-in-cylinder-maze"" in a python code block.
-###
-
-"," 
- color-blocks-in-cylinder-maze: {'task-name': 'color-blocks-in-cylinder-maze', 'task-description': 'Pick up five differently colored blocks (red, blue, yellow, green, and orange) that are scattered randomly on the table top. Arrange three cylindrical containers in a row to create a maze-like structure. Place the red, yellow, and blue block into the first, second, and third cylinder from left respectively. Then, stack the green and orange block on top of any container, followed by placing the same color palette on the respective block.', 'assets-used': ['block/block.urdf', 'cylinder/cylinder-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-blocks-in-cylinder-maze]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4029,13 +3749,8 @@ class ColorBlocksInCylinderMaze(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""create-pyramid-with-color-coded-ells"" in a python code block.
-###
-
-"," 
- create-pyramid-with-color-coded-ells: {'task-name': 'create-pyramid-with-color-coded-ells', 'task-description': ""There are four insertion ell-shaped objects ('insertion/ell.urdf') of different colors (red, blue, yellow, and green) placed randomly on the tabletop. The task is to pick up each of these objects and stack them onto a fixed-size pallet in the shape of a pyramid. The order of the pyramid from bottom to top should be red, blue, yellow, and green."", 'assets-used': ['insertion/ell.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [create-pyramid-with-color-coded-ells]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4098,13 +3813,8 @@ class CreatePyramidWithColorCodedElls(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""move-piles-along-line"" in a python code block.
-###
-
-"," 
- move-piles-along-line: {'task-name': 'move-piles-along-line', 'task-description': 'Move three piles of small blocks, each pile a different color (red, blue, green), along three matching colored lines to three separate zones of the same color using a spatula.', 'assets-used': ['block/small.urdf', 'zone/zone.urdf', 'line/line-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [move-piles-along-line]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4179,13 +3889,8 @@ class MovePilesAlongLine(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-ordered-blocks-on-pallet"" in a python code block.
-###
-
-"," 
- color-ordered-blocks-on-pallet: {'task-name': 'color-ordered-blocks-on-pallet', 'task-description': 'On a table there are six different colored blocks (red, blue, green, yellow, orange, and purple), a pallet, and a small corner structure. These colored blocks are arranged randomly within the small corner structure. The task involves picking up each colored block and placing it onto the pallet in specific color sequence: red, blue, green, yellow, orange, and finally purple.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf', 'corner/corner-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-ordered-blocks-on-pallet]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4248,13 +3953,8 @@ class ColorOrderedBlocksOnPallet(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-ordered-container-arrangement"" in a python code block.
-###
-
-"," 
- color-ordered-container-arrangement: {'task-name': 'color-ordered-container-arrangement', 'task-description': 'On the tabletop, there are six containers and six blocks of different colors (red, blue, green, yellow, orange, purple). The task is to pick up each block and place it into a container of the same color, then arrange the containers in a line in the following color order: red, blue, green, yellow, orange, and purple.', 'assets-used': ['block/block.urdf', 'container/container-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-ordered-container-arrangement]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4317,13 +4017,8 @@ class ColorOrderedContainerArrangement(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""multi-level-pyramid-construction"" in a python code block.
-###
-
-"," 
- multi-level-pyramid-construction: {'task-name': 'multi-level-pyramid-construction', 'task-description': 'Construct a two-level pyramid on a pallet using six blocks: three green and three blue. The first level should be a triangle created by placing the green blocks side by side. The second level should be built by placing the blue blocks on top of the green blocks, forming another triangle rotated 60 degrees with respect to the first one. The challenge lies in the precise placement of blocks, maintaining balance of the structure, and correct color arrangement.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [multi-level-pyramid-construction]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4384,13 +4079,8 @@ class MultiLevelPyramidConstruction(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""align-balls-in-colored-boxes"" in a python code block.
-###
-
-"," 
- align-balls-in-colored-boxes: {'task-name': 'align-balls-in-colored-boxes', 'task-description': 'On a tabletop, there are four balls and four boxes of different colors (red, blue, green, and yellow). Each ball is inside a box, but not corresponding to the color of the box. The task is to pick up each ball and place it in the box of the same color, in the specific sequence of red, blue, green and yellow from left to right. The challenge lies in the precise placement, color matching and sequence following.', 'assets-used': ['ball/ball.urdf', 'box/box-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [align-balls-in-colored-boxes]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4449,13 +4139,8 @@ class AlignBallsInColoredBoxes(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""colored-balls-sorting-in-corner"" in a python code block.
-###
-
-"," 
- colored-balls-sorting-in-corner: {'task-name': 'colored-balls-sorting-in-corner', 'task-description': 'There are four balls and four corners of different colors (red, blue, green, and yellow). Each ball is located at a corner, but not corresponding to the color of the corner. The task is to pick up each ball and place it in the corner of the same color, in the specific sequence of red, blue, green and yellow, starting from the leftmost corner to the rightmost. The challenge lies in the precise placement, color matching and sequence following.', 'assets-used': ['ball/ball-template.urdf', 'corner/corner-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [colored-balls-sorting-in-corner]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4511,13 +4196,8 @@ class ColoredBallsSortingInCorner(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-ball-insertion"" in a python code block.
-###
-
-"," 
- color-coordinated-ball-insertion: {'task-name': 'color-coordinated-ball-insertion', 'task-description': 'There are five differently-colored ell objects (red, blue, green, yellow, orange) and five sphere-shaped containers of matching colors. The task involves picking up each ell object and inserting it into the sphere container of the same color, but in a specific sequence from left to right: red, blue, green, yellow, and finally orange. The task is challenging due to the sequence, color coordination, and accuracy of insertion required.', 'assets-used': ['insertion/ell.urdf', 'sphere/sphere-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-ball-insertion]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4576,13 +4256,8 @@ class ColorCoordinatedBallInsertion(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-sequenced-pyramid-packing"" in a python code block.
-###
-
-"," 
- color-sequenced-pyramid-packing: {'task-name': 'color-sequenced-pyramid-packing', 'task-description': 'There are twelve cubes of different colors (three red, three green, three blue, and three yellow) scattered on the tabletop. The task is to pick up the cubes, sort them according to color into four pallets, and stack them in each pallet as a pyramid with the base layer containing two cubes and the top layer containing one cube. The challenge lies in the color-based sorting, the precise placement of cubes, and the construction of the pyramid in each pallet.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-sequenced-pyramid-packing]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4650,13 +4325,8 @@ class ColorSequencedPyramidPacking(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""ball-sorting-with-blocks-barrier"" in a python code block.
-###
-
-"," 
- ball-sorting-with-blocks-barrier: {'task-name': 'ball-sorting-with-blocks-barrier', 'task-description': 'On a tabletop, there are four balls and four zones of different colors (red, blue, green, and yellow). Each ball is located behind a line of small blocks of the same color. The task is to pick up each ball and place it into the zone of the same color, but without knocking over the blocks. The challenge lies in the precise navigation over the block barriers and color matching.', 'assets-used': ['ball/ball-template.urdf', 'zone/zone.urdf', 'block/small.urdf']}```
-
-###
+"Write the pybullet simulation task class [ball-sorting-with-blocks-barrier]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4723,13 +4393,8 @@ class BallSortingWithBlocksBarrier(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-block-bridge"" in a python code block.
-###
-
-"," 
- color-coordinated-block-bridge: {'task-name': 'color-coordinated-block-bridge', 'task-description': 'Construct a bridge by interleaving three differently colored blocks (red, blue, and green) on a pallet in a specific sequence - red block at the edges, blue block in the middle, and a green block on top of the red and blue blocks. Repeat this sequence until a bridge is formed across the length of the pallet.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-block-bridge]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4798,13 +4463,8 @@ class ColorCoordinatedBlockBridge(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-cylinder-pyramid"" in a python code block.
-###
-
-"," 
- color-coordinated-cylinder-pyramid: {'task-name': 'color-coordinated-cylinder-pyramid', 'task-description': 'Construct a pyramid on a pallet using four cylinders of different colors (red, blue, green, and yellow). The first level should consist of a red cylinder and a blue cylinder side by side. The second level should consist of a green cylinder placed on top of the red and blue cylinders. The third and final level should consist of a yellow cylinder placed on top of the green cylinder. The challenge lies in the precise placement of cylinders, maintaining the balance of the structure, and correct color arrangement.', 'assets-used': ['cylinder/cylinder-template.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-cylinder-pyramid]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4877,13 +4537,8 @@ class ColorCoordinatedCylinderPyramid(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""sweep-and-sort-blocks"" in a python code block.
-###
-
-"," 
- sweep-and-sort-blocks: {'task-name': 'sweep-and-sort-blocks', 'task-description': 'Sweep a pile of small blocks of different colors (red, blue, green, and yellow) into their corresponding colored zones marked on the tabletop. The challenge lies in the sweeping action, precise placement, and color coordination.', 'assets-used': ['zone/zone.urdf', 'block/small.urdf']}```
-
-###
+"Write the pybullet simulation task class [sweep-and-sort-blocks]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -4944,13 +4599,8 @@ class SweepAndSortBlocks(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""align-cylinders-in-zones"" in a python code block.
-###
-
-"," 
- align-cylinders-in-zones: {'task-name': 'align-cylinders-in-zones', 'task-description': 'Place four differently colored cylinders (red, blue, green, yellow) each into a matching colored zone. But, the zones are surrounded by small blocks, which the robot needs to move out of the way without knocking them out of their respective zones. The challenge includes precise placement of cylinders, color matching, and careful navigation around the small blocks.', 'assets-used': ['cylinder/cylinder-template.urdf', 'zone/zone.urdf', 'block/small.urdf']}```
-
-###
+"Write the pybullet simulation task class [align-cylinders-in-zones]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5022,13 +4672,8 @@ class AlignCylindersInZones(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""sphere-container-color-match"" in a python code block.
-###
-
-"," 
- sphere-container-color-match: {'task-name': 'sphere-container-color-match', 'task-description': 'On a tabletop, there are four spheres of different colors (red, blue, green, and yellow) inside four containers of a different color (red, blue, green, and yellow). The task is to pick up each sphere and place it into a container of the same color. The task is challenging due to the manipulation of spherical objects and the color coordination required.', 'assets-used': ['sphere/sphere.urdf', 'container/container-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [sphere-container-color-match]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5086,13 +4731,8 @@ class SphereContainerColorMatch(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""insert-ell-along-square-path"" in a python code block.
-###
-
-"," 
- insert-ell-along-square-path: {'task-name': 'insert-ell-along-square-path', 'task-description': 'On the tabletop, there is a square path marked by small blocks. Along the path, there are four colored ell-shaped blocks (red, blue, green, and yellow) and four fixtures of matching colors. The task is to pick up each ell block and insert it into the fixture of the same color. However, the robot must move each ell block along the marked square path to reach the fixture. The task is challenging because it requires precise navigation along the path, color coordination, and insertion accuracy.', 'assets-used': ['block/small.urdf', 'insertion/ell.urdf', 'insertion/fixture.urdf']}```
-
-###
+"Write the pybullet simulation task class [insert-ell-along-square-path]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5156,13 +4796,8 @@ class InsertEllAlongSquarePath(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-box-ball-matching"" in a python code block.
-###
-
-"," 
- color-coordinated-box-ball-matching: {'task-name': 'color-coordinated-box-ball-matching', 'task-description': 'On the tabletop, there are four boxes of different colors (red, blue, green, and yellow) and four balls of corresponding colors. The task is to pick up each ball and place it inside the box of the same color, however, the boxes are placed in a straight line with a row of small blocks acting as a barrier between the boxes and the balls. The challenge lies in the precise placement, color matching, and the navigation around the barrier without knocking over any small blocks.', 'assets-used': ['box/box-template.urdf', 'ball/ball-template.urdf', 'block/small.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-box-ball-matching]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5225,13 +4860,8 @@ class ColorCoordinatedBoxBallMatching(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""cylinder-balancing-and-placement"" in a python code block.
-###
-
-"," 
- cylinder-balancing-and-placement: {'task-name': 'cylinder-balancing-and-placement', 'task-description': 'On a table, there are three differently colored cylinders (red, green, and blue) and three square zones of matching colors. The task involves picking up each cylinder and balancing it on its end at the center of the corresponding colored zone, in the sequence of red, green, and blue from left to right. The task is challenging due to precise balancing required in placing the cylinders, color matching, and sequence following.', 'assets-used': ['cylinder/cylinder-template.urdf', 'zone/zone.urdf']}```
-
-###
+"Write the pybullet simulation task class [cylinder-balancing-and-placement]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5285,13 +4915,8 @@ class CylinderBalancingAndPlacement(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-sphere-and-cylinder-assembly"" in a python code block.
-###
-
-"," 
- color-coordinated-sphere-and-cylinder-assembly: {'task-name': 'color-coordinated-sphere-and-cylinder-assembly', 'task-description': 'The robot starts with four spheres of different colors (red, blue, green, yellow) and four cylinders of matching colors. The task is to pick up each sphere and place it on top of the cylinder of the same color, forming four sphere-and-cylinder pairs. However, the challenge here is to do this in a specific color sequence - red, blue, green, and finally yellow.', 'assets-used': ['sphere/sphere-template.urdf', 'cylinder/cylinder-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-sphere-and-cylinder-assembly]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5342,13 +4967,8 @@ class ColorCoordinatedSphereAndCylinderAssembly(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""sequential-block-insertion"" in a python code block.
-###
-
-"," 
- sequential-block-insertion: {'task-name': 'sequential-block-insertion', 'task-description': 'There are four blocks of different colors (red, blue, green, yellow) and four fixtures of matching colors. The task involves picking up each block and inserting it into the fixture of the same color, in the specific sequence of red, blue, green, and yellow. However, the challenge lies in the fact that the blocks and fixtures are initially arranged in a mixed order, demanding careful navigation, precise insertion, color matching, and sequence following.', 'assets-used': ['insertion/fixture.urdf', 'block/block.urdf']}```
-
-###
+"Write the pybullet simulation task class [sequential-block-insertion]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5406,13 +5026,8 @@ class SequentialBlockInsertion(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""sequential-insertion-and-stacking"" in a python code block.
-###
-
-"," 
- sequential-insertion-and-stacking: {'task-name': 'sequential-insertion-and-stacking', 'task-description': 'The tabletop contains three fixtures and three ell-shaped blocks of different colors - red, blue, and green. The task is to first pick up and insert each ell block into the corresponding colored fixture in the sequence of red, blue, and green. After successful insertion, the robot must pick up the three blocks again from the fixtures and stack them in a corner of the tabletop in the same color sequence - red at the bottom, blue in the middle, and green on top.', 'assets-used': ['insertion/ell.urdf', 'insertion/fixture.urdf', 'corner/corner-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [sequential-insertion-and-stacking]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5480,13 +5095,8 @@ class SequentialInsertionAndStacking(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-block-shifting"" in a python code block.
-###
-
-"," 
- color-coordinated-block-shifting: {'task-name': 'color-coordinated-block-shifting', 'task-description': 'On a tabletop, there are three zones marked in three different colors (red, blue, and green) and nine blocks of matching colors (three red, three blue, and three green). Each zone initially contains three blocks of a single color, but the colors of the blocks and zones do not match. The task involves picking up each block and precisely placing it in the zone of the same color. However, there are a few small blocks randomly scattered in the path between the zones. The robot has to strategically navigate around these blocks without knocking them over while transporting the blocks to the corresponding zones. The challenge lies in the precise navigation, placement of the blocks, color matching while avoiding the blocks.', 'assets-used': ['zone/zone.urdf', 'block/block.urdf', 'block/small.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-block-shifting]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5549,13 +5159,8 @@ class ColorCoordinatedBlockShifting(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""guided-block-path"" in a python code block.
-###
-
-"," 
- guided-block-path: {'task-name': 'guided-block-path', 'task-description': 'On the tabletop, there are four colored blocks (red, blue, green, and yellow) and four lines of the corresponding colors. The task is to pick up each block and move it along the line of the same color from start to end. The challenge lies in precise navigation along the line, color coordination, and block manipulation.', 'assets-used': ['block/block.urdf', 'line/line-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [guided-block-path]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5614,13 +5219,8 @@ class GuidedBlockPath(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""mixed-color-block-barrier-insertion"" in a python code block.
-###
-
-"," 
- mixed-color-block-barrier-insertion: {'task-name': 'mixed-color-block-barrier-insertion', 'task-description': 'There are four different colored blocks (red, blue, green, and yellow), and four fixtures in corresponding colors. Two barriers, each made of three blocks (orange, purple, and brown), are placed in between the blocks and fixtures, forming a path that the robot must navigate. The task involves picking up each colored block, navigating the barriers, and inserting each block into the fixture of the same color. The fixtures are arranged in a sequence from left to right: red, blue, green, and yellow, providing a challenge in precise navigation, color coordination, and insertion.', 'assets-used': ['block/block.urdf', 'insertion/fixture.urdf']}```
-
-###
+"Write the pybullet simulation task class [mixed-color-block-barrier-insertion]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5684,13 +5284,8 @@ class MixedColorBlockBarrierInsertion(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""ball-in-bowl-obstacle-course"" in a python code block.
-###
-
-"," 
- ball-in-bowl-obstacle-course: {'task-name': 'ball-in-bowl-obstacle-course', 'task-description': 'With the tabletop setup consisting of a maze of small blocks, the task requires the robot to pick up four balls of different colors (red, blue, green, yellow) and place each of them into the corresponding colored bowls strategically positioned at different corners of the maze, without knocking over any blocks, demanding careful navigation and color coordination.', 'assets-used': ['ball/ball-template.urdf', 'block/small.urdf', 'bowl/bowl.urdf']}```
-
-###
+"Write the pybullet simulation task class [ball-in-bowl-obstacle-course]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5752,13 +5347,8 @@ class BallInBowlObstacleCourse(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""ball-in-bowl-obstacle-course-new"" in a python code block.
-###
-
-"," 
- ball-in-bowl-obstacle-course-new: {'task-name': 'ball-in-bowl-obstacle-course-new', 'task-description': 'With the tabletop setup consisting of a maze of small blocks, the task requires the robot to pick up four balls of different colors (red, blue, green, yellow) and place each of them into the corresponding colored bowls strategically positioned at different corners of the maze, without knocking over any blocks, demanding careful navigation and color coordination.', 'assets-used': ['ball/ball-template.urdf', 'block/small.urdf', 'bowl/bowl.urdf']}```
-
-###
+"Write the pybullet simulation task class [ball-in-bowl-obstacle-course-new]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5820,13 +5410,8 @@ class BallInBowlObstacleCourseNew(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-arch-construction"" in a python code block.
-###
-
-"," 
- color-coordinated-arch-construction: {'task-name': 'color-coordinated-arch-construction', 'task-description': 'The task is to construct an arch using six blocks: three red and three blue. The blocks are initially placed in a container. The robot needs to pick each block and place it on a pallet in the following arrangement: place two red blocks in parallel on the pallet, then place a blue block on top of the red blocks to form an arch. Repeat the process with the remaining blocks, placing them on top of the first arch to form a second layer. The task is challenging due to the need for precise placement of the blocks and maintaining the balance of the structure.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf', 'container/container-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-arch-construction]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5891,13 +5476,8 @@ class ColorCoordinatedArchConstruction(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-zone-arrangement"" in a python code block.
-###
-
-"," 
- color-coordinated-zone-arrangement: {'task-name': 'color-coordinated-zone-arrangement', 'task-description': 'On the tabletop, there are nine blocks of three different colors (three red, three blue, and three green) and three pallets of matching colors (one red, one blue, one green). The task is to pick up each block and place it on the pallet of the same color, arranging the blocks on each pallet in a line. However, there are a few small blocks randomly scattered on the tabletop, which the robot has to navigate around without knocking them over while transporting the blocks to the corresponding pallets. The challenge lies in the precise navigation, placement of the blocks, color matching, and maintaining the balance on the pallets.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf', 'block/small.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-zone-arrangement]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -5962,13 +5542,8 @@ class ColorCoordinatedZoneArrangement(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-cylinder-stand-assembly"" in a python code block.
-###
-
-"," 
- color-coordinated-cylinder-stand-assembly: {'task-name': 'color-coordinated-cylinder-stand-assembly', 'task-description': 'The robot starts with four cylinders of different colors (red, blue, green, yellow) and four stands of matching colors. The task is to pick up each cylinder and place it on top of the stand of the same color, forming four cylinder-and-stand pairs. However, the challenge here is to do this in a specific color sequence - green, yellow, blue, and finally red, while also ensuring that the cylinders do not topple over.', 'assets-used': ['cylinder/cylinder-template.urdf', 'stacking/stand.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-cylinder-stand-assembly]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6025,13 +5600,8 @@ class ColorCoordinatedCylinderStandAssembly(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-ball-stacking"" in a python code block.
-###
-
-"," 
- color-coordinated-ball-stacking: {'task-name': 'color-coordinated-ball-stacking', 'task-description': 'There are four balls of different colors (red, blue, green, yellow), and four containers of matching colors on the table. The task is to pick up each ball and stack it on top of the corresponding colored container. However, the stacking should be done in a specific color sequence - blue at the bottom, followed by yellow, then green, and finally red at the top. This task enforces challenging skills due to the precision required for stacking the balls, color coordination, and sequencing.', 'assets-used': ['ball/ball-template.urdf', 'container/container-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-ball-stacking]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6102,13 +5672,8 @@ class ColorCoordinatedBallStacking(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coded-blocks-on-corner"" in a python code block.
-###
-
-"," 
- color-coded-blocks-on-corner: {'task-name': 'color-coded-blocks-on-corner', 'task-description': 'On a tabletop, there are four blocks of different colors (red, blue, green, and yellow) and a corner structure. The task involves picking up each block and placing it in the corner structure in a specific color sequence: from left to right, place red, blue, green, and finally yellow. The blocks must be arranged such that they form a straight line along the corner. The challenge lies in the precise placement, color coordination, and maintaining the balance of the blocks along the corner.', 'assets-used': ['block/block.urdf', 'corner/corner-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coded-blocks-on-corner]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6170,13 +5735,8 @@ class ColorCodedBlocksOnCorner(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""insertion-in-color-sequenced-zones"" in a python code block.
-###
-
-"," 
- insertion-in-color-sequenced-zones: {'task-name': 'insertion-in-color-sequenced-zones', 'task-description': 'On the table, there are four differently-colored insertion ell objects (red, blue, green, yellow) and four zones on the tabletop marked in the same colors. Initially, each ell is placed in a zone but not corresponding to the color of the zone. The task is to pick up each ell and place it in the zone of the same color, in the specific sequence of red, blue, green, and yellow from left to right, requiring careful navigation, precise placement, color matching, and sequence following.', 'assets-used': ['insertion/ell.urdf', 'zone/zone.urdf']}```
-
-###
+"Write the pybullet simulation task class [insertion-in-color-sequenced-zones]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6232,13 +5792,8 @@ class InsertionInColorSequencedZones(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-zone-stacking"" in a python code block.
-###
-
-"," 
- color-coordinated-zone-stacking: {'task-name': 'color-coordinated-zone-stacking', 'task-description': 'On the tabletop, there are three zones and nine blocks of three different colors (red, blue, green). Each color has three blocks and the blocks are scattered randomly on the table. The task is to pick up the blocks and stack them in the zones to form a pyramid shape. Each pyramid should contain blocks of the same color with two blocks on the base and one block on top. The zones with the pyramids should be arranged in a straight line in the following color order: red, blue, green from left to right. The challenge lies in the color coordination, precise stacking and the arrangement of the zones.', 'assets-used': ['block/block.urdf', 'zone/zone.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-zone-stacking]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6303,13 +5858,8 @@ class ColorCoordinatedZoneStacking(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-cylinder-ball-match"" in a python code block.
-###
-
-"," 
- color-coordinated-cylinder-ball-match: {'task-name': 'color-coordinated-cylinder-ball-match', 'task-description': 'On the tabletop, there are four cylinders of different colors (red, blue, green, and yellow) and four balls of corresponding colors. The task is to pick up each ball and place it on top of the cylinder of the same color without the ball rolling off. However, there are small blocks scattered randomly on the table that the robot has to navigate around without knocking them over. The challenge lies in the precise placement of the balls on top of the cylinders, color matching, and navigation around the blocks.', 'assets-used': ['cylinder/cylinder-template.urdf', 'ball/ball-template.urdf', 'block/small.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-cylinder-ball-match]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6376,13 +5926,8 @@ class ColorCoordinatedCylinderBallMatch(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""multi-level-insertion-and-zone-matching"" in a python code block.
-###
-
-"," 
- multi-level-insertion-and-zone-matching: {'task-name': 'multi-level-insertion-and-zone-matching', 'task-description': 'There are three levels of zones marked on the tabletop - the first level is red, second is blue, and third is green. On each level, there are large, medium, and small ell-shaped objects in corresponding colors. The task is to pick up each ell object from its current position and insert it into the corresponding colored zone on the same level, but in a specific order - large, medium, and small. The challenge lies in the precise control of insertion, color coordination, and the multi-level structure of the environment.', 'assets-used': ['zone/zone.urdf', 'insertion/ell.urdf']}```
-
-###
+"Write the pybullet simulation task class [multi-level-insertion-and-zone-matching]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6438,13 +5983,8 @@ class MultiLevelInsertionAndZoneMatching(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-cued-ball-corner-sorting"" in a python code block.
-###
-
-"," 
- color-cued-ball-corner-sorting: {'task-name': 'color-cued-ball-corner-sorting', 'task-description': 'On a tabletop, there are four different colored balls (red, blue, green, yellow) and four corners marked with corresponding colors using the corner template. The task involves picking up each ball and precisely placing it in the corner of the same color. However, there is a rectangular zone in the middle of the table marked by small blocks. The robot has to strategically navigate around this zone without touching the blocks while transporting the balls to the corresponding corners. The challenge lies in the precise navigation, placement of the balls, and color matching while avoiding the blocks.', 'assets-used': ['ball/ball-template.urdf', 'corner/corner-template.urdf', 'block/block_for_anchors.urdf', 'zone/zone.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-cued-ball-corner-sorting]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6511,13 +6051,8 @@ class ColorCuedBallCornerSorting(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""cylinder-ring-stack"" in a python code block.
-###
-
-"," 
- cylinder-ring-stack: {'task-name': 'cylinder-ring-stack', 'task-description': 'On the tabletop, there are four differently colored cylinders (red, blue, green, yellow) and four blocks of matching colors. The task involves picking up each block and stacking it on top of the corresponding colored cylinder. However, each cylinder and block pair should be stacked inside a differently colored container (color sequence: red cylinder and block in blue container, blue in green, green in yellow, and yellow in red). The task offers challenges in multi-object manipulation, color coordination, and precise stacking in a confined space.', 'assets-used': ['cylinder/cylinder-template.urdf', 'block/block.urdf', 'container/container-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [cylinder-ring-stack]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6584,13 +6119,8 @@ class CylinderRingStack(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-coordinated-sphere-on-pallet-pyramid"" in a python code block.
-###
-
-"," 
- color-coordinated-sphere-on-pallet-pyramid: {'task-name': 'color-coordinated-sphere-on-pallet-pyramid', 'task-description': 'On the tabletop, there are three pallets and nine blocks of three different colors (red, blue, green). Each color has three blocks and the blocks are scattered randomly on the table. The task is to pick up the blocks and stack them on the pallets to form a pyramid shape. Each pyramid should contain blocks of the same color with two blocks on the base and one block on top. Additionally, there are three spheres of matching colors (red, blue, green). The task is to pick up each sphere and place it on top of the corresponding colored pyramid. The pallets with the pyramids and spheres should be arranged in a straight line in the following color order: red, blue, green from left to right. The challenge lies in the color coordination, precise stacking, and the arrangement of the pallets.', 'assets-used': ['block/block.urdf', 'pallet/pallet.urdf', 'sphere/sphere.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-coordinated-sphere-on-pallet-pyramid]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6673,13 +6203,8 @@ class ColorCoordinatedSphereOnPalletPyramid(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-sequenced-sphere-placement"" in a python code block.
-###
-
-"," 
- color-sequenced-sphere-placement: {'task-name': 'color-sequenced-sphere-placement', 'task-description': 'On the tabletop, there are four spheres of different colors (red, blue, green, and yellow) and four colored squares of matching colors. The task involves picking up each sphere and precisely placing it in the center of the square of the same color. However, the spheres must be placed in a specific sequence - red first, then blue, then green, and finally yellow. The task is challenging due to the need for precise placement, color coordination, and sequence following.', 'assets-used': ['sphere/sphere.urdf', 'square/square-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-sequenced-sphere-placement]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6735,13 +6260,8 @@ class ColorSequencedSpherePlacement(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""color-ordered-insertion-new"" in a python code block.
-###
-
-"," 
- color-ordered-insertion-new: {'task-name': 'color-ordered-insertion-new', 'task-description': 'There are four differently-colored ell objects (red, blue, green, yellow) and a corresponding set of color-coded fixtures. The task involves picking up each ell object and inserting it into the matching color fixture in a specific order: from left to right, insert red, blue, green, and finally yellow. The challenge lies in the precise manipulation of the ell objects and the color-coordination required.', 'assets-used': ['insertion/ell.urdf', 'insertion/fixture.urdf']}```
-
-###
+"Write the pybullet simulation task class [color-ordered-insertion-new]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 import os
@@ -6798,13 +6318,8 @@ class ColorOrderedInsertionNew(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""put-blocks-between-zones"" in a python code block.
-###
-
-"," 
- put-blocks-between-zones: {'task-name': 'put-blocks-between-zones', 'task-description': 'Arrange four differently colored blocks (red, blue, green, and yellow) between two designated zones on the tabletop.', 'assets-used': ['zone/zone.urdf', 'block/block.urdf']}```
-
-###
+"Write the pybullet simulation task class [put-blocks-between-zones]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -6861,13 +6376,8 @@ class PutBlocksBetweenZones(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""put-blues-around-red"" in a python code block.
-###
-
-"," 
- put-blues-around-red: {'task-name': 'put-blues-around-red', 'task-description': 'place the blue blocks around the red block.', 'assets-used': ['block/block_for_anchors.urdf']}```
-
-###
+"Write the pybullet simulation task class [put-blues-around-red]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -6920,13 +6430,8 @@ class PlaceBluesAroundRed(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""place-blue-on-line-ends"" in a python code block.
-###
-
-"," 
- place-blue-on-line-ends: {'task-name': 'place-blue-on-line-ends', 'task-description': 'Pick up each blue box and accurately place it at the end of a green line.', 'assets-used': ['line/line-template.urdf', 'box/box-template.urdf']}```
-
-###
+"Write the pybullet simulation task class [place-blue-on-line-ends]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -6979,13 +6484,8 @@ class PlaceBlueOnLineEnds(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""stack-three-layer-red-wall"" in a python code block.
-###
-
-"," 
- stack-three-layer-red-wall: {'task-name': 'block-on-cylinder-on-pallet', 'task-description': 'On the tabletop, there are three cylinders of different colors (red, blue, and green) and three blocks of the same colors. The task involves picking up each block and placing it on the corresponding colored cylinder, which are located in specific positions on a pallet. Starting with the red block and cylinder, followed by blue and finally green. The challenge lies in the precise placement of the blocks on the cylinders, while maintaining color coordination.', 'assets-used': ['block/block.urdf', 'cylinder/cylinder-template.urdf', 'pallet/pallet.urdf']}```
-
-###
+"Write the pybullet simulation task class [stack-three-layer-red-wall]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -7033,13 +6533,8 @@ class StackThreeLayerRedWall(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""block-on-cylinder-on-pallet"" in a python code block.
-###
-
-"," 
- block-on-cylinder-on-pallet: {'task-name': 'block-on-cylinder-on-pallet', 'assets-used': ['pallet/pallet.urdf', 'cylinder/cylinder-template.urdf', 'block/block.urdf'], 'task-description': 'Pick up each block and place it on the corresponding colored cylinder, which are located in specific positions on a pallet.'}```
-
-###
+"Write the pybullet simulation task class [block-on-cylinder-on-pallet]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -7103,13 +6598,8 @@ class BlockOnCylinderOnPallet(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""ball-on-box-on-container"" in a python code block.
-###
-
-"," 
- ball-on-box-on-container: {'task-name': 'ball-on-box-on-container', 'assets-used': ['container/container-template.urdf', 'box/box-template.urdf', 'ball/ball.urdf'], 'task-description': 'Pick up each ball and place it on the corresponding colored box, which are located in specific positions on a container.'}```
-
-###
+"Write the pybullet simulation task class [ball-on-box-on-container]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -7176,13 +6666,8 @@ class BallOnBoxOnContainer(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""align-rope-along-line"" in a python code block.
-###
-
-"," 
- align-rope-along-line: {'task-name': 'align-rope-along-line', 'assets-used': ['line/line-template.urdf'], 'task-description': 'Align a deformable rope along a straight line marked on the tabletop.'}```
-
-###
+"Write the pybullet simulation task class [align-rope-along-line]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -7226,13 +6711,8 @@ class AlignRopeAlongLine(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""align-rope-cross-zone"" in a python code block.
-###
-
-"," 
- align-rope-cross-zone: {'task-name': 'align-rope-cross-zone', 'assets-used': ['zone/zone.urdf'], 'task-description': 'Align a deformable rope across the diagonal of a zone marked on the tabletop.'}```
-
-###
+"Write the pybullet simulation task class [align-rope-cross-zone]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -7274,13 +6754,8 @@ class AlignRopeCrossZone(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""put-kit-in-bowl"" in a python code block.
-###
-
-"," 
- put-kit-in-bowl: {'task-name': 'put-kit-in-bowl', 'assets-used': ['stacking/block.urdf', 'bowl/bowl.urdf', 'kitting/object-template.urdf'], 'task-description': 'Place the specific kit in a bowl of specified color.'}```
-
-###
+"Write the pybullet simulation task class [put-kit-in-bowl]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -7365,13 +6840,8 @@ class PutKitInBowl(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""kit-in-bowl-in-zone"" in a python code block.
-###
-
-"," 
- kit-in-bowl-in-zone: {'task-name': 'kit-in-bowl-in-zone', 'assets-used': ['zone/zone.urdf', 'bowl/bowl.urdf', 'kitting/object-template.urdf'], 'task-description': 'Pick up each kit and place it on the corresponding colored bowl, which are located in specific positions on a zone.'}```
-
-###
+"Write the pybullet simulation task class [kit-in-bowl-in-zone]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -7440,13 +6910,8 @@ class KitInBowlInZone(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""move-kit-from-zone-to-cylinder"" in a python code block.
-###
-
-"," 
- move-kit-from-zone-to-cylinder: {'task-name': 'move-kit-from-zone-to-cylinder', 'assets-used': ['cylinder/cylinder-template.urdf', 'zone/zone.urdf', 'kitting/object-template.urdf', 'kitting/object-template.urdf'], 'task-description': 'Place the specific kit from a zone to a cylinder.'}```
-
-###
+"Write the pybullet simulation task class [move-kit-from-zone-to-cylinder]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task
@@ -7522,13 +6987,8 @@ class MoveKitFromZoneToCylinder(Task):
 ```
 
 ###"
-"Write the pybullet simulation code for the task ""move-bowl-from-pallet-to-corner"" in a python code block.
-###
-
-"," 
- move-bowl-from-pallet-to-corner: {'task-name': 'move-bowl-from-pallet-to-corner', 'assets-used': ['corner/corner-template.urdf', 'pallet/pallet.urdf', 'bowl/bowl.urdf'], 'task-description': 'Place the specific bowl from a pallet to a corner.'}```
-
-###
+"Write the pybullet simulation task class [move-bowl-from-pallet-to-corner]. Provide answers in a python code block starting with ```
+","
 ```python
 import numpy as np
 from cliport.tasks.task import Task

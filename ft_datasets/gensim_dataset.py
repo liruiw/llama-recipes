@@ -17,9 +17,9 @@ def _tokenize_fn(strings: Sequence[str], tokenizer: transformers.PreTrainedToken
         tokenizer(
             text,
             return_tensors="pt",
-            padding="longest",
+            # padding="longest",
             max_length=tokenizer.model_max_length,
-            truncation=True,
+            # truncation=True,
         )
         for text in strings
     ]
@@ -34,12 +34,25 @@ def _tokenize_fn(strings: Sequence[str], tokenizer: transformers.PreTrainedToken
         labels_lens=labels_lens,
     )
 
+def get_prompt(message: str, chat_history: list[tuple[str, str]],
+               system_prompt: str) -> str:
+    texts = [f'<s>[INST] <<SYS>>\n{system_prompt}\n<</SYS>>\n\n']
+    # The first user input is _not_ stripped
+    do_strip = False
+    for user_input, response in chat_history:
+        user_input = user_input.strip() if do_strip else user_input
+        do_strip = True
+        texts.append(f'{user_input} [/INST] {response.strip()} </s><s>[INST] ')
+    message = message.strip() if do_strip else message
+    texts.append(f'{message} [/INST]')
+    return ''.join(texts)
+
 def preprocess(
     sample,
     tokenizer: transformers.PreTrainedTokenizer,
 ) -> Dict:
     """Preprocess the data by tokenizing."""
-    sources = sample['prompt']
+    sources = get_prompt(sample['prompt'], [], '')
     targets = sample['completion']
     targets = [f"{output}{tokenizer.eos_token}" for output in sample['completion']]
     examples = [s + t for s, t in zip(sources, targets)]
@@ -54,38 +67,6 @@ def preprocess(
 
 def get_preprocessed_gensim(dataset_config, tokenizer, split):
     dataset = datasets.load_dataset('csv', data_files='ft_datasets/finetune_data_codellama.csv')
-
-    system = "You are an AI in robot simulation code and task design."
-    # user = format_finetune_prompt("build-car")
-
-    text_prompt = f"<s><<SYS>>\\n{{system}}\\n<</SYS>>\\n\\n{{prompt}}\\n\\n{{completion}}\\n\\n"
-
-    # prompt = (
-    #     f"\n{{dialog}}\n---\n\n{{summary}}{{eos_token}}"
-    # )
-    # https://huggingface.co/blog/codellama#conversational-instructions
-
-    # def apply_prompt_template(sample):
-    #     return {
-    #         "text": text_prompt.format(
-    #             system=system,
-    #             prompt=sample["prompt"],
-    #             completion=sample["completion"],
-    #             eos_token=tokenizer.eos_token,
-    #         )
-    #     }
-
-    # def apply_prompt_template(sample):
-    #     return dict(input_ids=text_prompt.format(
-    #             system=system,
-    #             prompt=sample["prompt"],
-    #             completion=sample["completion"],
-    #             eos_token=tokenizer.eos_token,
-    #         )
-    #     )
-
-    # dataset = dataset.map(apply_prompt_template )
-
     dataset = dataset.map(
         lambda sample: preprocess(sample, tokenizer),
         batched=True,
