@@ -64,7 +64,7 @@ def smart_tokenizer_and_embedding_resize(
 
 DEFAULT_PAD_TOKEN = "[PAD]"
 IGNORE_INDEX = -100
-model_id = "codellama_7b_python"
+model_id = "codellama_7b"
 
 tokenizer = LlamaTokenizer.from_pretrained(model_id)
 
@@ -83,17 +83,17 @@ train_dataset = get_preprocessed_dataset(tokenizer, gensim_dataset, 'train')
 # data = ({"messages": [{"role": "system", "content": ""},
 #                          {"role": "user", "content": prompt},
 #                          {"role": "assistant", "content": completion}]})
-system = "You are an AI in robot simulation code and task design."
+system = "Write the pybullet simulation reset function for the task [align-corner]. Provide answers in a python code block starting with ```"
 user = format_finetune_prompt("build-car")
-
-prompt = f"<s><<SYS>>\\n{system}\\n<</SYS>>\\n\\n{user}"
+prompt = f"<s>[INST] <<SYS>>\\n{system}\\n<</SYS>>\\n\\n{user}[/INST]"
+prompt = user
 model_input = tokenizer(prompt, return_tensors="pt", add_special_tokens=False).to("cuda")
 print("prompt:===\n", prompt)
 # model_input = tokenizer(prompt, return_tensors="pt").to("cuda")
 
 model.eval()
 with torch.no_grad():
-    print(tokenizer.decode(model.generate(**model_input, max_new_tokens=100)[0], skip_special_tokens=True))
+    print(tokenizer.decode(model.generate(**model_input, max_new_tokens=1000, temperature=0.2, top_p=0.95)[0], skip_special_tokens=True))
 
 
 model.train()
@@ -123,9 +123,6 @@ def create_peft_config(model):
 
 # create peft config
 model, lora_config = create_peft_config(model)
-
-
-
 enable_profiler = False
 output_dir = "tmp/llama-output"
 
@@ -164,8 +161,10 @@ else:
 
 
 
-
+# Training
 # Define training args
+model.config.use_cache = False
+
 training_args = TrainingArguments(
     output_dir=output_dir,
     overwrite_output_dir=True,
@@ -198,4 +197,4 @@ model.save_pretrained(output_dir)
 
 model.eval()
 with torch.no_grad():
-    print(tokenizer.decode(model.generate(**model_input, max_new_tokens=100)[0], skip_special_tokens=True))
+    print(tokenizer.decode(model.generate(**model_input, max_new_tokens=1000)[0], skip_special_tokens=True))

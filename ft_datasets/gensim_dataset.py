@@ -27,9 +27,6 @@ def _tokenize_fn(strings: Sequence[str], tokenizer: transformers.PreTrainedToken
     input_ids_lens = labels_lens = [
         tokenized.input_ids.ne(tokenizer.pad_token_id).sum().item() for tokenized in tokenized_list
     ]
-    print(input_ids_lens)
-    print(labels)
-    print(input_ids)
     return dict(
         input_ids=input_ids,
         labels=labels,
@@ -44,6 +41,7 @@ def preprocess(
     """Preprocess the data by tokenizing."""
     sources = sample['prompt']
     targets = sample['completion']
+    targets = [f"{output}{tokenizer.eos_token}" for output in sample['completion']]
     examples = [s + t for s, t in zip(sources, targets)]
     examples_tokenized, sources_tokenized = [_tokenize_fn(strings, tokenizer) for strings in (examples, sources)]
     input_ids = examples_tokenized["input_ids"]
@@ -55,7 +53,7 @@ def preprocess(
     return dict(input_ids=input_ids, labels=labels, attention_mask=attention_mask)
 
 def get_preprocessed_gensim(dataset_config, tokenizer, split):
-    dataset = datasets.load_dataset('csv', data_files='ft_datasets/gensim_data.csv')
+    dataset = datasets.load_dataset('csv', data_files='ft_datasets/finetune_data_codellama.csv')
 
     system = "You are an AI in robot simulation code and task design."
     # user = format_finetune_prompt("build-car")
@@ -67,15 +65,15 @@ def get_preprocessed_gensim(dataset_config, tokenizer, split):
     # )
     # https://huggingface.co/blog/codellama#conversational-instructions
 
-    def apply_prompt_template(sample):
-        return {
-            "text": text_prompt.format(
-                system=system,
-                prompt=sample["prompt"],
-                completion=sample["completion"],
-                eos_token=tokenizer.eos_token,
-            )
-        }
+    # def apply_prompt_template(sample):
+    #     return {
+    #         "text": text_prompt.format(
+    #             system=system,
+    #             prompt=sample["prompt"],
+    #             completion=sample["completion"],
+    #             eos_token=tokenizer.eos_token,
+    #         )
+    #     }
 
     # def apply_prompt_template(sample):
     #     return dict(input_ids=text_prompt.format(
