@@ -1,1 +1,0 @@
-python quick_start_new.py -e 10 --task align-rainbow-along-line,cylinder-in-colorful-container,splitting-piles,stack-cylinder-pyramid,build-pyramid-in-zone,block-on-cylinder-on-pallet,align-cylinder-in-zone,construct-symmetric-block-wall,insert-blue-on-red-cylinder,rainbow-pyramid  -b 4

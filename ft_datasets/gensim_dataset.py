@@ -66,9 +66,8 @@ def preprocess(
     return dict(input_ids=input_ids, labels=labels, attention_mask=attention_mask)
 
 def get_preprocessed_gensim(dataset_config, tokenizer, split, few_shot=False):
-    data_file = 'ft_datasets/finetune_data_codellama.csv' if not few_shot \
-                else 'ft_datasets/finetune_data_codellama_example.csv' 
-    dataset = datasets.load_dataset('csv', data_files=data_file )
+    data_file = 'ft_datasets/finetune_data_codellama.csv'  if not few_shot else 'ft_datasets/finetune_data_codellama_example.csv' 
+    dataset = datasets.load_dataset('csv', data_files=data_file, features=None)
     dataset = dataset.map(
         lambda sample: preprocess(sample, tokenizer),
         batched=True,

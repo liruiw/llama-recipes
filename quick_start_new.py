@@ -168,7 +168,7 @@ parser.add_argument("--seed", "-s", type=int, default=0)
 
 
 args = parser.parse_args()
-torch.manual_seed(args.seed)
+# torch.manual_seed(args.seed)
 
 # 
 FEWSHOT_PROMPT = open("ft_datasets/finetune_instructions_prompt_withexamples.txt").read()
