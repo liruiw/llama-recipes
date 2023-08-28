@@ -23,7 +23,7 @@ DATASET_PREPROC = {
 
 
 def get_preprocessed_dataset(
-    tokenizer, dataset_config, split: str = "train"
+    tokenizer, dataset_config, split: str = "train", **kwargs
 ) -> torch.utils.data.Dataset:
     if not dataset_config.dataset in DATASET_PREPROC:
         raise NotImplementedError(f"{dataset_config.dataset} is not (yet) implemented")
@@ -39,4 +39,5 @@ def get_preprocessed_dataset(
         dataset_config,
         tokenizer,
         get_split(),
+        **kwargs
     )

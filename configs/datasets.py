@@ -31,6 +31,5 @@ class alpaca_dataset:
 class gensim_dataset:
     dataset: str = "gensim_dataset"
     train_split: str = "train"
-    test_split: str = "val"
     data_path: str = "ft_datasets/gensim_data.json"
     input_length: int = 1024

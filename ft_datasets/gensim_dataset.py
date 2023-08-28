@@ -65,9 +65,10 @@ def preprocess(
     attention_mask = [input_id.ne(tokenizer.pad_token_id) for input_id in input_ids]
     return dict(input_ids=input_ids, labels=labels, attention_mask=attention_mask)
 
-def get_preprocessed_gensim(dataset_config, tokenizer, split):
-    data_file = 'ft_datasets/finetune_data_codellama.csv' if split == 'train' else 'ft_datasets/finetune_data_codellama_example.csv' 
-    dataset = datasets.load_dataset('csv', data_files=data_file)
+def get_preprocessed_gensim(dataset_config, tokenizer, split, few_shot=False):
+    data_file = 'ft_datasets/finetune_data_codellama.csv' if not few_shot \
+                else 'ft_datasets/finetune_data_codellama_example.csv' 
+    dataset = datasets.load_dataset('csv', data_files=data_file )
     dataset = dataset.map(
         lambda sample: preprocess(sample, tokenizer),
         batched=True,

@@ -98,7 +98,7 @@ def get_generator_input(inputs):
     return dict(
         inputs,
         do_sample=True,
-        temperature=0.1,
+        temperature=0.01,
         top_p=0.9,
         num_return_sequences=1,
         top_k=50,
@@ -164,18 +164,20 @@ parser.add_argument("--task_name", "-t", type=str, default='align-corner')
 parser.add_argument("--batch_size", "-b", type=int, default=2)
 parser.add_argument("--use_int8", action='store_true')
 parser.add_argument("--use_fewshot", action='store_true')
+parser.add_argument("--seed", "-s", type=int, default=0)
+
+
 args = parser.parse_args()
+torch.manual_seed(args.seed)
 
+# 
+FEWSHOT_PROMPT = open("ft_datasets/finetune_instructions_prompt_withexamples.txt").read()
+PROMPT = open("ft_datasets/finetune_instructions_prompt.txt").read()
 if args.use_fewshot:
-    PROMPT = open("ft_datasets/finetune_instructions_prompt_withexamples.txt") 
-else:
-    PROMPT = open("ft_datasets/finetune_instructions_prompt.txt") 
-# PROMPT = open("ft_datasets/finetune_instructions_prompt_withexample.txt") 
+    PROMPT = FEWSHOT_PROMPT
 
-
-
-before_finetuned_folder = f'output/before_finetune_{args.pretrained_model}_fewshot_{args.use_fewshot}'
-after_finetuned_folder = f'output/after_finetune_{args.pretrained_model}_fewshot_{args.use_fewshot}'
+before_finetuned_folder = f'output/before_finetune_{args.pretrained_model}_fewshot_{args.use_fewshot}_{args.seed}'
+after_finetuned_folder = f'output/after_finetune_{args.pretrained_model}_fewshot_{args.use_fewshot}_{args.seed}'
 mkdir_if_missing(before_finetuned_folder)
 mkdir_if_missing(after_finetuned_folder)
 
@@ -194,7 +196,7 @@ if tokenizer.pad_token is None:
     # tokenizer.add_special_tokens({'pad_token': DEFAULT_PAD_TOKEN})
 
 for task_name in args.task_name.split(","):
-    prompt_input = PROMPT.replace('TASK_NAME_TEMPLATE', task_name)
+    prompt_input = FEWSHOT_PROMPT.replace('TASK_NAME_TEMPLATE', task_name)
     prompt = get_prompt(prompt_input, [], '')
     model_input = tokenizer([prompt], return_tensors='pt', add_special_tokens=False).to('cuda')
     model_input = get_generator_input(model_input)
@@ -206,7 +208,7 @@ for task_name in args.task_name.split(","):
         save_text(before_finetuned_folder, task_name + "_code_output", text_output)
 
 model.train()
-train_dataset = get_preprocessed_dataset(tokenizer, gensim_dataset, 'train' if not args.use_fewshot else 'fewshot')
+train_dataset = get_preprocessed_dataset(tokenizer, gensim_dataset, 'train', few_shot=args.use_fewshot)
 
 # create peft config
 model, lora_config = create_peft_config(model)
