@@ -1,0 +1,105 @@
+[INST] <<SYS>>
+
+<</SYS>>
+
+Write the pybullet simulation task class [build-pyramid-in-zone]. Provide answers in a python code block starting with ``` [/INST]  ```
+class BuildPyramidInZoneTask(pybullet.Task):
+    def __init__(self, pybullet_client, zone_id, pyramid_height):
+        self.pybullet_client = pybullet_client
+        self.zone_id = zone_id
+        self.pyramid_height = pyramid_height
+
+    def get_observation(self):
+        # Get the current state of the environment
+        state = self.pybullet_client.get_state()
+
+        # Get the position and orientation of the pyramid
+        pyramid_position = state.get_position(self.pyramid_id)
+        pyramid_orientation = state.get_orientation(self.pyramid_id)
+
+        # Get the position and orientation of the zone
+        zone_position = state.get_position(self.zone_id)
+        zone_orientation = state.get_orientation(self.zone_id)
+
+        # Calculate the distance between the pyramid and the zone
+        distance = np.linalg.norm(pyramid_position - zone_position)
+
+        # Calculate the angle between the pyramid and the zone
+        angle = np.arccos(np.dot(pyramid_orientation, zone_orientation))
+
+        # Return the observation as a dictionary
+        return {
+            "pyramid_position": pyramid_position,
+            "pyramid_orientation": pyramid_orientation,
+            "zone_position": zone_position,
+            "zone_orientation": zone_orientation,
+            "distance": distance,
+            "angle": angle
+        }
+
+    def get_reward(self):
+        # Get the current state of the environment
+        state = self.pybullet_client.get_state()
+
+        # Get the position and orientation of the pyramid
+        pyramid_position = state.get_position(self.pyramid_id)
+        pyramid_orientation = state.get_orientation(self.pyramid_id)
+
+        # Get the position and orientation of the zone
+        zone_position = state.get_position(self.zone_id)
+        zone_orientation = state.get_orientation(self.zone_id)
+
+        # Calculate the distance between the pyramid and the zone
+        distance = np.linalg.norm(pyramid_position - zone_position)
+
+        # Calculate the angle between the pyramid and the zone
+        angle = np.arccos(np.dot(pyramid_orientation, zone_orientation))
+
+        # Calculate the reward based on the distance and angle
+        reward = 100 - distance - angle
+
+        # Return the reward
+        return reward
+
+    def step(self, action):
+        # Get the current state of the environment
+        state = self.pybullet_client.get_state()
+
+        # Get the position and orientation of the pyramid
+        pyramid_position = state.get_position(self.pyramid_id)
+        pyramid_orientation = state.get_orientation(self.pyramid_id)
+
+        # Get the position and orientation of the zone
+        zone_position = state.get_position(self.zone_id)
+        zone_orientation = state.get_orientation(self.zone_id)
+
+        # Calculate the distance between the pyramid and the zone
+        distance = np.linalg.norm(pyramid_position - zone_position)
+
+        # Calculate the angle between the pyramid and the zone
+        angle = np.arccos(np.dot(pyramid_orientation, zone_orientation))
+
+        # Calculate the reward based on the distance and angle
+        reward = 100 - distance - angle
+
+        # Take the action
+        self.pybullet_client.step(action)
+
+        # Get the new state of the environment
+        new_state = self.pybullet_client.get_state()
+
+        # Get the new position and orientation of the pyramid
+        new_pyramid_position = new_state.get_position(self.pyramid_id)
+        new_pyramid_orientation = new_state.get_orientation(self.pyramid_id)
+
+        # Get the new position and orientation of the zone
+        new_zone_position = new_state.get_position(self.zone_id)
+        new_zone_orientation = new_state.get_orientation(self.zone_id)
+
+        # Calculate the new distance between the pyramid and the zone
+        new_distance = np.linalg.norm(new_pyramid_position - new_zone_position)
+
+        # Calculate the new angle between the pyramid and the zone
+        new_angle = np.arccos(np.dot(new_pyramid_orientation, new_zone_orientation))
+
+       

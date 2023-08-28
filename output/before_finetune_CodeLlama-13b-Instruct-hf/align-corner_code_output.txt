@@ -1,0 +1,30 @@
+[INST] <<SYS>>
+
+<</SYS>>
+
+Write the pybullet simulation task class [align-corner]. Provide answers in a python code block starting with ``` [/INST]  ```
+import pybullet as p
+
+class SimulationTask:
+    def __init__(self, task_name, task_description, task_parameters):
+        self.task_name = task_name
+        self.task_description = task_description
+        self.task_parameters = task_parameters
+
+    def run_task(self):
+        # Run the simulation task
+        pass
+
+    def get_task_results(self):
+        # Return the results of the simulation task
+        pass
+
+    def get_task_parameters(self):
+        # Return the parameters of the simulation task
+        pass
+
+    def set_task_parameters(self, task_parameters):
+        # Set the parameters of the simulation task
+        pass
+```
+This is a basic template for a simulation task class in PyBullet. The class has several methods that can be used to run the simulation task, get the results of the task, and set the parameters of the task. The `run_task` method is where the simulation task is actually run, and the `get_task_results` method is where the results of the task are returned. The `get_task_parameters` and `set_task_parameters` methods are used to get and set the parameters of the task, respectively.

@@ -1,0 +1,28 @@
+[INST] <<SYS>>
+
+<</SYS>>
+
+Write the pybullet simulation task class [align-cylinder-in-zone]. Provide answers in a python code block starting with ``` [/INST]  ```
+class AlignCylinderInZone(pybullet.Task):
+    def __init__(self, cylinder_radius, cylinder_height, zone_size, zone_position):
+        self.cylinder_radius = cylinder_radius
+        self.cylinder_height = cylinder_height
+        self.zone_size = zone_size
+        self.zone_position = zone_position
+
+    def step(self, state):
+        # Get the current position of the cylinder
+        cylinder_position = state.get_position(self.cylinder_id)
+
+        # Calculate the distance between the cylinder and the zone
+        distance = np.linalg.norm(cylinder_position - self.zone_position)
+
+        # Calculate the angle between the cylinder and the zone
+        angle = np.arccos(np.dot(cylinder_position - self.zone_position, self.zone_position) / (distance * self.zone_size))
+
+        # Calculate the reward based on the distance and angle
+        reward = -distance + angle
+
+        # Return the reward and the next state
+        return reward, state
+```

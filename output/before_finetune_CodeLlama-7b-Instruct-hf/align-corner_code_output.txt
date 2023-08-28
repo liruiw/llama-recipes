@@ -1,0 +1,47 @@
+[INST] <<SYS>>
+
+<</SYS>>
+
+Write the pybullet simulation task class [align-corner]. Provide answers in a python code block starting with ``` [/INST]  ```
+import pybullet as p
+
+class AlignCorner:
+    def __init__(self, robot, corner_index):
+        self.robot = robot
+        self.corner_index = corner_index
+
+    def get_observation_space(self):
+        return p.observation_space.box(-1, 1, (3,))
+
+    def get_action_space(self):
+        return p.action_space.box(-1, 1, (2,))
+
+    def reset(self):
+        self.robot.reset()
+        self.robot.set_position(p.get_random_position())
+        self.robot.set_orientation(p.get_random_orientation())
+        self.corner_index = p.get_random_integer(0, 3)
+
+    def step(self, action):
+        self.robot.set_action(action)
+        self.robot.step()
+        observation = self.robot.get_observation()
+        reward = self.get_reward(observation)
+        done = self.get_done(observation)
+        info = {}
+        return observation, reward, done, info
+
+    def get_reward(self, observation):
+        corner = observation[self.corner_index]
+        return -1 if corner < 0 else 1
+
+    def get_done(self, observation):
+        return False
+```
+This is a Python class that represents a task for a robot to align with a corner of a box. The class has the following methods:
+
+* `__init__`: Initializes the task with the robot and the corner index.
+* `get_observation_space`: Returns the observation space of the task.
+* `get_action_space`: Returns the action space of the task.
+* `reset`: Resets the task by resetting the robot and setting a new position and orientation for the robot.
+* `step`: Steps the task by setting the action of the robot and getting the observation,

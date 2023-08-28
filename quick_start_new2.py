@@ -124,8 +124,7 @@ def create_peft_config(model):
     )
 
     # prepare int-8 model for training
-    if args.use_int8:
-        model = prepare_model_for_int8_training(model)
+    # model = prepare_model_for_int8_training(model)
     model = get_peft_model(model, peft_config)
     model.print_trainable_parameters()
     return model, peft_config
@@ -155,27 +154,18 @@ else:
     profiler = nullcontext()
 
 
-# f"Write the pybullet simulation task class [{}]. Provide answers in a python code block starting with ```"
-
 parser = argparse.ArgumentParser()
 parser.add_argument("--pretrained_model", "-p", type=str, default='CodeLlama-7b-Instruct-hf')
 parser.add_argument("--epoch", "-e", type=int, default=1)
 parser.add_argument("--task_name", "-t", type=str, default='align-corner')
 parser.add_argument("--batch_size", "-b", type=int, default=2)
-parser.add_argument("--use_int8", action='store_true')
-parser.add_argument("--use_fewshot", action='store_true')
+
+# davinci:ft-mit-cal:gensim-2023-08-06-16-00-56
 args = parser.parse_args()
 
-if args.use_fewshot:
-    PROMPT = open("ft_datasets/finetune_instructions_prompt_withexamples.txt") 
-else:
-    PROMPT = open("ft_datasets/finetune_instructions_prompt.txt") 
-# PROMPT = open("ft_datasets/finetune_instructions_prompt_withexample.txt") 
 
-
-
-before_finetuned_folder = f'output/before_finetune_{args.pretrained_model}_fewshot_{args.use_fewshot}'
-after_finetuned_folder = f'output/after_finetune_{args.pretrained_model}_fewshot_{args.use_fewshot}'
+before_finetuned_folder = f'output/before_finetune_{args.pretrained_model}'
+after_finetuned_folder = f'output/after_finetune_{args.pretrained_model}'
 mkdir_if_missing(before_finetuned_folder)
 mkdir_if_missing(after_finetuned_folder)
 
@@ -183,7 +173,7 @@ mkdir_if_missing(after_finetuned_folder)
 ## RUN
 model_id = "codellama/" + args.pretrained_model
 tokenizer = AutoTokenizer.from_pretrained(model_id, model_max_length=1025) # 500
-model = LlamaForCausalLM.from_pretrained(model_id, load_in_8bit=args.use_int8, device_map='auto', torch_dtype=torch.float16) # load_in_8bit=True, 
+model = LlamaForCausalLM.from_pretrained(model_id,  device_map='auto', torch_dtype=torch.float16) # load_in_8bit=True, 
 
 if tokenizer.pad_token is None:
     smart_tokenizer_and_embedding_resize(
@@ -194,7 +184,7 @@ if tokenizer.pad_token is None:
     # tokenizer.add_special_tokens({'pad_token': DEFAULT_PAD_TOKEN})
 
 for task_name in args.task_name.split(","):
-    prompt_input = PROMPT.replace('TASK_NAME_TEMPLATE', task_name)
+    prompt_input = f"Write the pybullet simulation task class [{task_name}]. Provide answers in a python code block starting with ```"
     prompt = get_prompt(prompt_input, [], '')
     model_input = tokenizer([prompt], return_tensors='pt', add_special_tokens=False).to('cuda')
     model_input = get_generator_input(model_input)
@@ -206,7 +196,7 @@ for task_name in args.task_name.split(","):
         save_text(before_finetuned_folder, task_name + "_code_output", text_output)
 
 model.train()
-train_dataset = get_preprocessed_dataset(tokenizer, gensim_dataset, 'train' if not args.use_fewshot else 'fewshot')
+train_dataset = get_preprocessed_dataset(tokenizer, gensim_dataset, 'train')
 
 # create peft config
 model, lora_config = create_peft_config(model)
@@ -256,7 +246,7 @@ with profiler:
 
 print("begin finetuned model eval ====\n")
 for task_name in args.task_name.split(","):
-    prompt_input = PROMPT.replace('TASK_NAME_TEMPLATE', task_name)
+    prompt_input = f"Write the pybullet simulation task class [{task_name}]. Provide answers in a python code block starting with ```"
     prompt = get_prompt(prompt_input, [], '')
     model_input = tokenizer([prompt], return_tensors='pt', add_special_tokens=False).to('cuda')
     model_input = get_generator_input(model_input)
