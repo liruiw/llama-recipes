@@ -102,7 +102,7 @@ def get_generator_input(inputs):
         top_p=0.9,
         num_return_sequences=1,
         top_k=50,
-        max_length=1800,
+        max_length=1200,
         num_beams=1
     )
 
@@ -176,15 +176,15 @@ PROMPT = open("ft_datasets/finetune_instructions_prompt.txt").read()
 if args.use_fewshot:
     PROMPT = FEWSHOT_PROMPT
 
-before_finetuned_folder = f'output/before_finetune_{args.pretrained_model}_fewshot_{args.use_fewshot}_epoch_{args.epoch}_{args.seed}'
-after_finetuned_folder = f'output/after_finetune_{args.pretrained_model}_fewshot_{args.use_fewshot}_epoch_{args.epoch}_{args.seed}'
+before_finetuned_folder = f'output/before_finetune_{args.pretrained_model}_fewshot_{args.use_fewshot}_{args.seed}'
+after_finetuned_folder = f'output/after_finetune_{args.pretrained_model}_fewshot_{args.use_fewshot}_{args.seed}'
 mkdir_if_missing(before_finetuned_folder)
 mkdir_if_missing(after_finetuned_folder)
 
 
 ## RUN
 model_id = "codellama/" + args.pretrained_model
-tokenizer = AutoTokenizer.from_pretrained(model_id, model_max_length=1425) # 500
+tokenizer = AutoTokenizer.from_pretrained(model_id, model_max_length=1025) # 500
 model = LlamaForCausalLM.from_pretrained(model_id, load_in_8bit=args.use_int8, device_map='auto', torch_dtype=torch.float16) # load_in_8bit=True, 
 
 if tokenizer.pad_token is None:
@@ -195,17 +195,17 @@ if tokenizer.pad_token is None:
         )
     # tokenizer.add_special_tokens({'pad_token': DEFAULT_PAD_TOKEN})
 
-for task_name in args.task_name.split(","):
-    prompt_input = PROMPT.replace('TASK_NAME_TEMPLATE', task_name)
-    prompt = get_prompt(prompt_input, [], '')
-    model_input = tokenizer([prompt], return_tensors='pt', add_special_tokens=False).to('cuda')
-    model_input = get_generator_input(model_input)
+# for task_name in args.task_name.split(","):
+#     prompt_input = FEWSHOT_PROMPT.replace('TASK_NAME_TEMPLATE', task_name)
+#     prompt = get_prompt(prompt_input, [], '')
+#     model_input = tokenizer([prompt], return_tensors='pt', add_special_tokens=False).to('cuda')
+#     model_input = get_generator_input(model_input)
 
-    model.eval()
-    with torch.no_grad():
-        text_output = tokenizer.decode(model.generate(**model_input)[0], skip_special_tokens=True)
-        print(f"Code for {task_name}:", text_output)
-        save_text(before_finetuned_folder, task_name + "_code_output", text_output)
+#     model.eval()
+#     with torch.no_grad():
+#         text_output = tokenizer.decode(model.generate(**model_input)[0], skip_special_tokens=True)
+#         print(f"Code for {task_name}:", text_output)
+#         save_text(before_finetuned_folder, task_name + "_code_output", text_output)
 
 model.train()
 train_dataset = get_preprocessed_dataset(tokenizer, gensim_dataset, 'train', few_shot=args.use_fewshot)
@@ -253,23 +253,25 @@ with profiler:
     )
 
     # Start training
-    trainer.train()
+    # trainer.train()
 
 
-print("begin finetuned model eval ====\n")
-for task_name in args.task_name.split(","):
-    prompt_input = PROMPT.replace('TASK_NAME_TEMPLATE', task_name)
-    prompt = get_prompt(prompt_input, [], '')
-    model_input = tokenizer([prompt], return_tensors='pt', add_special_tokens=False).to('cuda')
-    model_input = get_generator_input(model_input)
+# print("begin finetuned model eval ====\n")
+# for task_name in args.task_name.split(","):
+#     prompt_input = PROMPT.replace('TASK_NAME_TEMPLATE', task_name)
+#     prompt = get_prompt(prompt_input, [], '')
+#     model_input = tokenizer([prompt], return_tensors='pt', add_special_tokens=False).to('cuda')
+#     model_input = get_generator_input(model_input)
 
-    model.eval()
-    with torch.no_grad():
-        text_output = tokenizer.decode(model.generate(**model_input)[0], skip_special_tokens=True)
-        print(f"Code for {task_name}:", text_output)
-        save_text(after_finetuned_folder, task_name + "_code_output", text_output)
+#     model.eval()
+#     with torch.no_grad():
+#         text_output = tokenizer.decode(model.generate(**model_input)[0], skip_special_tokens=True)
+#         print(f"Code for {task_name}:", text_output)
+#         save_text(after_finetuned_folder, task_name + "_code_output", text_output)
 
-print("Saving model")
-exit()
-# model.save_pretrained(output_dir)
-# trainer.push_to_hub()
+print("Save model")
+# exit()
+model.save_pretrained(output_dir)
+print("Push model")
+
+trainer.push_to_hub()

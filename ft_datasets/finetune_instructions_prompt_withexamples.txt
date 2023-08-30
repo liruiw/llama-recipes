@@ -1,4 +1,4 @@
-I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task "TASK_NAME_TEMPLATE".
+I will provide you reference code for the task 'block-insertion' and you can write the code for the task "TASK_NAME_TEMPLATE".
 
 """
 class BlockInsertion(Task):
@@ -38,4 +38,4 @@ class BlockInsertion(Task):
 """
 
 
-Now write the pybullet simulation task class [TASK_NAME_TEMPLATE]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [TASK_NAME_TEMPLATE]. Provide answers in a python code block starting with ```python

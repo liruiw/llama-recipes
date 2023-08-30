@@ -1,5 +1,5 @@
 prompt,completion
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""align-box-corner"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""align-box-corner"".
 
 """"""
 class BlockInsertion(Task):
@@ -39,7 +39,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [align-box-corner]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [align-box-corner]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import os
@@ -105,7 +105,7 @@ class AlignBoxCorner(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""align-rope"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""align-rope"".
 
 """"""
 class BlockInsertion(Task):
@@ -145,7 +145,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [align-rope]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [align-rope]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import os
@@ -221,7 +221,7 @@ class AlignRope(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""assembling-kits"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""assembling-kits"".
 
 """"""
 class BlockInsertion(Task):
@@ -261,7 +261,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [assembling-kits]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [assembling-kits]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import os
@@ -329,7 +329,7 @@ class AssemblingKits(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""manipulating-rope"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""manipulating-rope"".
 
 """"""
 class BlockInsertion(Task):
@@ -369,7 +369,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [manipulating-rope]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [manipulating-rope]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import os
@@ -427,7 +427,7 @@ class ManipulatingRope(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""packing-boxes"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""packing-boxes"".
 
 """"""
 class BlockInsertion(Task):
@@ -467,7 +467,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [packing-boxes]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [packing-boxes]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import os
@@ -555,7 +555,7 @@ class PackingBoxes(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""palletizing-boxes"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""palletizing-boxes"".
 
 """"""
 class BlockInsertion(Task):
@@ -595,7 +595,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [palletizing-boxes]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [palletizing-boxes]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import os
@@ -686,7 +686,7 @@ class PalletizingBoxes(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""place-red-in-green"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""place-red-in-green"".
 
 """"""
 class BlockInsertion(Task):
@@ -726,7 +726,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [place-red-in-green]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [place-red-in-green]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -794,7 +794,7 @@ class PlaceRedInGreen(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""stack-block-pyramid"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""stack-block-pyramid"".
 
 """"""
 class BlockInsertion(Task):
@@ -834,7 +834,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [stack-block-pyramid]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [stack-block-pyramid]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -900,7 +900,7 @@ class StackBlockPyramid(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""sweeping-piles"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""sweeping-piles"".
 
 """"""
 class BlockInsertion(Task):
@@ -940,7 +940,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [sweeping-piles]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [sweeping-piles]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -979,7 +979,7 @@ class SweepingPiles(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""build-wheel"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""build-wheel"".
 
 """"""
 class BlockInsertion(Task):
@@ -1019,7 +1019,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [build-wheel]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [build-wheel]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -1081,7 +1081,7 @@ class BuildWheel(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""push-piles-into-letter"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""push-piles-into-letter"".
 
 """"""
 class BlockInsertion(Task):
@@ -1121,7 +1121,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [push-piles-into-letter]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [push-piles-into-letter]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -1183,7 +1183,7 @@ class BuildWheel(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""connect-boxes-with-rope"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""connect-boxes-with-rope"".
 
 """"""
 class BlockInsertion(Task):
@@ -1223,7 +1223,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [connect-boxes-with-rope]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [connect-boxes-with-rope]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -1278,7 +1278,7 @@ class ConnectBoxesWithRope(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""build-car"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""build-car"".
 
 """"""
 class BlockInsertion(Task):
@@ -1318,7 +1318,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [build-car]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [build-car]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -1419,7 +1419,7 @@ class BuildCar(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""manipulating-two-ropes"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""manipulating-two-ropes"".
 
 """"""
 class BlockInsertion(Task):
@@ -1459,7 +1459,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [manipulating-two-ropes]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [manipulating-two-ropes]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -1521,7 +1521,7 @@ class ManipulatingTwoRopes(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""insert-sphere-into-container"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""insert-sphere-into-container"".
 
 """"""
 class BlockInsertion(Task):
@@ -1561,7 +1561,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [insert-sphere-into-container]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [insert-sphere-into-container]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -1613,7 +1613,7 @@ class InsertSphereIntoContainer(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""insert-cylinder-in-container"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""insert-cylinder-in-container"".
 
 """"""
 class BlockInsertion(Task):
@@ -1653,7 +1653,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [insert-cylinder-in-container]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [insert-cylinder-in-container]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -1705,7 +1705,7 @@ class InsertSphereIntoContainer(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""build-bridge"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""build-bridge"".
 
 """"""
 class BlockInsertion(Task):
@@ -1745,7 +1745,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [build-bridge]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [build-bridge]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -1832,7 +1832,7 @@ class BuildBridge(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""insert-ell-in-fixture"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""insert-ell-in-fixture"".
 
 """"""
 class BlockInsertion(Task):
@@ -1872,7 +1872,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [insert-ell-in-fixture]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [insert-ell-in-fixture]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -1959,7 +1959,7 @@ class BuildBridge(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""build-block-tower-on-pallet"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""build-block-tower-on-pallet"".
 
 """"""
 class BlockInsertion(Task):
@@ -1999,7 +1999,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [build-block-tower-on-pallet]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [build-block-tower-on-pallet]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -2086,7 +2086,7 @@ class BuildBridge(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-tower"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-tower"".
 
 """"""
 class BlockInsertion(Task):
@@ -2126,7 +2126,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-tower]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-tower]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -2213,7 +2213,7 @@ class BuildBridge(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""stack-blocks-in-container"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""stack-blocks-in-container"".
 
 """"""
 class BlockInsertion(Task):
@@ -2253,7 +2253,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [stack-blocks-in-container]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [stack-blocks-in-container]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -2310,7 +2310,7 @@ class StackBlocksInContainer(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-block-tower"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-block-tower"".
 
 """"""
 class BlockInsertion(Task):
@@ -2350,7 +2350,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-block-tower]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-block-tower]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -2420,7 +2420,7 @@ class ColorCoordinatedBlockTower(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-structured-block-tower"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-structured-block-tower"".
 
 """"""
 class BlockInsertion(Task):
@@ -2460,7 +2460,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-structured-block-tower]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-structured-block-tower]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -2518,7 +2518,7 @@ class ColorStructuredBlockTower(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""stack-color-coordinated-blocks"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""stack-color-coordinated-blocks"".
 
 """"""
 class BlockInsertion(Task):
@@ -2558,7 +2558,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [stack-color-coordinated-blocks]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [stack-color-coordinated-blocks]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -2632,7 +2632,7 @@ class StackColorCoordinatedBlocks(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""assemble-single-car"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""assemble-single-car"".
 
 """"""
 class BlockInsertion(Task):
@@ -2672,7 +2672,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [assemble-single-car]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [assemble-single-car]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -2739,7 +2739,7 @@ class AssembleSingleCar(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""sort-and-stack-clr-blocks"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""sort-and-stack-clr-blocks"".
 
 """"""
 class BlockInsertion(Task):
@@ -2779,7 +2779,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [sort-and-stack-clr-blocks]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [sort-and-stack-clr-blocks]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -2847,7 +2847,7 @@ class SortAndStackClrBlocks(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""create-pyramid-blocks-and-container"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""create-pyramid-blocks-and-container"".
 
 """"""
 class BlockInsertion(Task):
@@ -2887,7 +2887,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [create-pyramid-blocks-and-container]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [create-pyramid-blocks-and-container]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -2961,7 +2961,7 @@ class CreatePyramidBlocksAndContainer(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""Four-corner-pyramid-challenge"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""Four-corner-pyramid-challenge"".
 
 """"""
 class BlockInsertion(Task):
@@ -3001,7 +3001,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [Four-corner-pyramid-challenge]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [Four-corner-pyramid-challenge]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -3068,7 +3068,7 @@ class FourCornerPyramidChallenge(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""colorful-block-tower-on-cylinder-base"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""colorful-block-tower-on-cylinder-base"".
 
 """"""
 class BlockInsertion(Task):
@@ -3108,7 +3108,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [colorful-block-tower-on-cylinder-base]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [colorful-block-tower-on-cylinder-base]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -3169,7 +3169,7 @@ class ColorfulBlockTowerOnCylinderBase(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""construct-corner-blocks"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""construct-corner-blocks"".
 
 """"""
 class BlockInsertion(Task):
@@ -3209,7 +3209,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [construct-corner-blocks]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [construct-corner-blocks]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -3275,7 +3275,7 @@ class ConstructCornerBlocks(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""corner-sort-cylinders"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""corner-sort-cylinders"".
 
 """"""
 class BlockInsertion(Task):
@@ -3315,7 +3315,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [corner-sort-cylinders]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [corner-sort-cylinders]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -3376,7 +3376,7 @@ class CornerSortCylinders(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""sorting-blocks-into-pallets"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""sorting-blocks-into-pallets"".
 
 """"""
 class BlockInsertion(Task):
@@ -3416,7 +3416,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [sorting-blocks-into-pallets]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [sorting-blocks-into-pallets]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -3473,7 +3473,7 @@ class SortingBlocksIntoPallets(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""sort-and-assemble-block-castle"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""sort-and-assemble-block-castle"".
 
 """"""
 class BlockInsertion(Task):
@@ -3513,7 +3513,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [sort-and-assemble-block-castle]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [sort-and-assemble-block-castle]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -3578,7 +3578,7 @@ class SortAndAssembleBlockCastle(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""vertical-insertion-blocks"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""vertical-insertion-blocks"".
 
 """"""
 class BlockInsertion(Task):
@@ -3618,7 +3618,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [vertical-insertion-blocks]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [vertical-insertion-blocks]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -3678,7 +3678,7 @@ class VerticalInsertionBlocks(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-sphere-insertion"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-sphere-insertion"".
 
 """"""
 class BlockInsertion(Task):
@@ -3718,7 +3718,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-sphere-insertion]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-sphere-insertion]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -3780,7 +3780,7 @@ class ColorCoordinatedSphereInsertion(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""block-pyramid-with-limited-space"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""block-pyramid-with-limited-space"".
 
 """"""
 class BlockInsertion(Task):
@@ -3820,7 +3820,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [block-pyramid-with-limited-space]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [block-pyramid-with-limited-space]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -3886,7 +3886,7 @@ class BlockPyramidWithLimitedSpace(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""build-cylinder-structure"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""build-cylinder-structure"".
 
 """"""
 class BlockInsertion(Task):
@@ -3926,7 +3926,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [build-cylinder-structure]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [build-cylinder-structure]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -3999,7 +3999,7 @@ class BuildCylinderStructure(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""insert-blocks-lineup"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""insert-blocks-lineup"".
 
 """"""
 class BlockInsertion(Task):
@@ -4039,7 +4039,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [insert-blocks-lineup]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [insert-blocks-lineup]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -4103,7 +4103,7 @@ class InsertBlocksLineup(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-specific-container-fill"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-specific-container-fill"".
 
 """"""
 class BlockInsertion(Task):
@@ -4143,7 +4143,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-specific-container-fill]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-specific-container-fill]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -4212,7 +4212,7 @@ class ColorSpecificContainerFill(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""multicolor-block-bridge"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""multicolor-block-bridge"".
 
 """"""
 class BlockInsertion(Task):
@@ -4252,7 +4252,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [multicolor-block-bridge]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [multicolor-block-bridge]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -4331,7 +4331,7 @@ class MulticolorBlockBridge(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""pyramid-blocks-assemble"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""pyramid-blocks-assemble"".
 
 """"""
 class BlockInsertion(Task):
@@ -4371,7 +4371,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [pyramid-blocks-assemble]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [pyramid-blocks-assemble]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -4439,7 +4439,7 @@ class PyramidBlocksAssemble(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""place-ball-in-elevated-bowl"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""place-ball-in-elevated-bowl"".
 
 """"""
 class BlockInsertion(Task):
@@ -4479,7 +4479,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [place-ball-in-elevated-bowl]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [place-ball-in-elevated-bowl]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -4538,7 +4538,7 @@ class PlaceBallInElevatedBowl(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""align-balls-in-colored-zones"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""align-balls-in-colored-zones"".
 
 """"""
 class BlockInsertion(Task):
@@ -4578,7 +4578,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [align-balls-in-colored-zones]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [align-balls-in-colored-zones]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -4638,7 +4638,7 @@ class AlignBallsInColoredZones(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-cylinder-tower"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-cylinder-tower"".
 
 """"""
 class BlockInsertion(Task):
@@ -4678,7 +4678,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-cylinder-tower]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-cylinder-tower]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -4737,7 +4737,7 @@ class ColorCoordinatedCylinderTower(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""symmetric-block-bridge-construction"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""symmetric-block-bridge-construction"".
 
 """"""
 class BlockInsertion(Task):
@@ -4777,7 +4777,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [symmetric-block-bridge-construction]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [symmetric-block-bridge-construction]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -4870,7 +4870,7 @@ class SymmetricBlockBridgeConstruction(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""sphere-align-stand"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""sphere-align-stand"".
 
 """"""
 class BlockInsertion(Task):
@@ -4910,7 +4910,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [sphere-align-stand]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [sphere-align-stand]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -4970,7 +4970,7 @@ class SphereAlignStand(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""construct-colorful-arch"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""construct-colorful-arch"".
 
 """"""
 class BlockInsertion(Task):
@@ -5010,7 +5010,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [construct-colorful-arch]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [construct-colorful-arch]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -5079,7 +5079,7 @@ class ConstructColorfulArch(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-sorted-container-stack"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-sorted-container-stack"".
 
 """"""
 class BlockInsertion(Task):
@@ -5119,7 +5119,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-sorted-container-stack]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-sorted-container-stack]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -5183,7 +5183,7 @@ class ColorSortedContainerStack(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""align-spheres-in-colored-zones"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""align-spheres-in-colored-zones"".
 
 """"""
 class BlockInsertion(Task):
@@ -5223,7 +5223,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [align-spheres-in-colored-zones]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [align-spheres-in-colored-zones]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -5283,7 +5283,7 @@ class AlignSpheresInColoredZones(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""sort-insert-color-coordinated-blocks"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""sort-insert-color-coordinated-blocks"".
 
 """"""
 class BlockInsertion(Task):
@@ -5323,7 +5323,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [sort-insert-color-coordinated-blocks]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [sort-insert-color-coordinated-blocks]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -5382,7 +5382,7 @@ class SortInsertColorCoordinatedBlocks(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-ordered-insertion"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-ordered-insertion"".
 
 """"""
 class BlockInsertion(Task):
@@ -5422,7 +5422,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-ordered-insertion]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-ordered-insertion]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -5480,7 +5480,7 @@ class ColorOrderedInsertion(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-insertion"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-insertion"".
 
 """"""
 class BlockInsertion(Task):
@@ -5520,7 +5520,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-insertion]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-insertion]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -5588,7 +5588,7 @@ class ColorCoordinatedInsertion(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""cylinder-stand-alignment"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""cylinder-stand-alignment"".
 
 """"""
 class BlockInsertion(Task):
@@ -5628,7 +5628,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [cylinder-stand-alignment]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [cylinder-stand-alignment]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -5692,7 +5692,7 @@ class CylinderStandAlignment(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-sorted-block-race"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-sorted-block-race"".
 
 """"""
 class BlockInsertion(Task):
@@ -5732,7 +5732,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-sorted-block-race]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-sorted-block-race]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -5789,7 +5789,7 @@ class ColorSortedBlockRace(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""multi-level-block-construction"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""multi-level-block-construction"".
 
 """"""
 class BlockInsertion(Task):
@@ -5829,7 +5829,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [multi-level-block-construction]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [multi-level-block-construction]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -5892,7 +5892,7 @@ class MultiLevelBlockConstruction(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-blocks-in-cylinder-maze"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-blocks-in-cylinder-maze"".
 
 """"""
 class BlockInsertion(Task):
@@ -5932,7 +5932,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-blocks-in-cylinder-maze]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-blocks-in-cylinder-maze]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -5989,7 +5989,7 @@ class ColorBlocksInCylinderMaze(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""create-pyramid-with-color-coded-ells"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""create-pyramid-with-color-coded-ells"".
 
 """"""
 class BlockInsertion(Task):
@@ -6029,7 +6029,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [create-pyramid-with-color-coded-ells]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [create-pyramid-with-color-coded-ells]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -6093,7 +6093,7 @@ class CreatePyramidWithColorCodedElls(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""move-piles-along-line"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""move-piles-along-line"".
 
 """"""
 class BlockInsertion(Task):
@@ -6133,7 +6133,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [move-piles-along-line]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [move-piles-along-line]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -6209,7 +6209,7 @@ class MovePilesAlongLine(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-ordered-blocks-on-pallet"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-ordered-blocks-on-pallet"".
 
 """"""
 class BlockInsertion(Task):
@@ -6249,7 +6249,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-ordered-blocks-on-pallet]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-ordered-blocks-on-pallet]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -6313,7 +6313,7 @@ class ColorOrderedBlocksOnPallet(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-ordered-container-arrangement"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-ordered-container-arrangement"".
 
 """"""
 class BlockInsertion(Task):
@@ -6353,7 +6353,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-ordered-container-arrangement]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-ordered-container-arrangement]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -6417,7 +6417,7 @@ class ColorOrderedContainerArrangement(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""multi-level-pyramid-construction"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""multi-level-pyramid-construction"".
 
 """"""
 class BlockInsertion(Task):
@@ -6457,7 +6457,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [multi-level-pyramid-construction]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [multi-level-pyramid-construction]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -6519,7 +6519,7 @@ class MultiLevelPyramidConstruction(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""align-balls-in-colored-boxes"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""align-balls-in-colored-boxes"".
 
 """"""
 class BlockInsertion(Task):
@@ -6559,7 +6559,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [align-balls-in-colored-boxes]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [align-balls-in-colored-boxes]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -6619,7 +6619,7 @@ class AlignBallsInColoredBoxes(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""colored-balls-sorting-in-corner"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""colored-balls-sorting-in-corner"".
 
 """"""
 class BlockInsertion(Task):
@@ -6659,7 +6659,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [colored-balls-sorting-in-corner]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [colored-balls-sorting-in-corner]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -6716,7 +6716,7 @@ class ColoredBallsSortingInCorner(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-ball-insertion"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-ball-insertion"".
 
 """"""
 class BlockInsertion(Task):
@@ -6756,7 +6756,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-ball-insertion]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-ball-insertion]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -6816,7 +6816,7 @@ class ColorCoordinatedBallInsertion(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-sequenced-pyramid-packing"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-sequenced-pyramid-packing"".
 
 """"""
 class BlockInsertion(Task):
@@ -6856,7 +6856,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-sequenced-pyramid-packing]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-sequenced-pyramid-packing]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -6925,7 +6925,7 @@ class ColorSequencedPyramidPacking(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""ball-sorting-with-blocks-barrier"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""ball-sorting-with-blocks-barrier"".
 
 """"""
 class BlockInsertion(Task):
@@ -6965,7 +6965,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [ball-sorting-with-blocks-barrier]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [ball-sorting-with-blocks-barrier]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -7033,7 +7033,7 @@ class BallSortingWithBlocksBarrier(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-block-bridge"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-block-bridge"".
 
 """"""
 class BlockInsertion(Task):
@@ -7073,7 +7073,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-block-bridge]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-block-bridge]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -7143,7 +7143,7 @@ class ColorCoordinatedBlockBridge(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-cylinder-pyramid"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-cylinder-pyramid"".
 
 """"""
 class BlockInsertion(Task):
@@ -7183,7 +7183,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-cylinder-pyramid]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-cylinder-pyramid]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -7257,7 +7257,7 @@ class ColorCoordinatedCylinderPyramid(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""sweep-and-sort-blocks"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""sweep-and-sort-blocks"".
 
 """"""
 class BlockInsertion(Task):
@@ -7297,7 +7297,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [sweep-and-sort-blocks]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [sweep-and-sort-blocks]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -7359,7 +7359,7 @@ class SweepAndSortBlocks(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""align-cylinders-in-zones"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""align-cylinders-in-zones"".
 
 """"""
 class BlockInsertion(Task):
@@ -7399,7 +7399,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [align-cylinders-in-zones]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [align-cylinders-in-zones]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -7472,7 +7472,7 @@ class AlignCylindersInZones(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""sphere-container-color-match"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""sphere-container-color-match"".
 
 """"""
 class BlockInsertion(Task):
@@ -7512,7 +7512,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [sphere-container-color-match]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [sphere-container-color-match]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -7571,7 +7571,7 @@ class SphereContainerColorMatch(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""insert-ell-along-square-path"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""insert-ell-along-square-path"".
 
 """"""
 class BlockInsertion(Task):
@@ -7611,7 +7611,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [insert-ell-along-square-path]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [insert-ell-along-square-path]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -7676,7 +7676,7 @@ class InsertEllAlongSquarePath(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-box-ball-matching"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-box-ball-matching"".
 
 """"""
 class BlockInsertion(Task):
@@ -7716,7 +7716,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-box-ball-matching]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-box-ball-matching]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -7780,7 +7780,7 @@ class ColorCoordinatedBoxBallMatching(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""cylinder-balancing-and-placement"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""cylinder-balancing-and-placement"".
 
 """"""
 class BlockInsertion(Task):
@@ -7820,7 +7820,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [cylinder-balancing-and-placement]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [cylinder-balancing-and-placement]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -7875,7 +7875,7 @@ class CylinderBalancingAndPlacement(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-sphere-and-cylinder-assembly"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-sphere-and-cylinder-assembly"".
 
 """"""
 class BlockInsertion(Task):
@@ -7915,7 +7915,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-sphere-and-cylinder-assembly]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-sphere-and-cylinder-assembly]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -7967,7 +7967,7 @@ class ColorCoordinatedSphereAndCylinderAssembly(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""sequential-block-insertion"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""sequential-block-insertion"".
 
 """"""
 class BlockInsertion(Task):
@@ -8007,7 +8007,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [sequential-block-insertion]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [sequential-block-insertion]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -8066,7 +8066,7 @@ class SequentialBlockInsertion(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""sequential-insertion-and-stacking"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""sequential-insertion-and-stacking"".
 
 """"""
 class BlockInsertion(Task):
@@ -8106,7 +8106,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [sequential-insertion-and-stacking]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [sequential-insertion-and-stacking]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -8175,7 +8175,7 @@ class SequentialInsertionAndStacking(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-block-shifting"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-block-shifting"".
 
 """"""
 class BlockInsertion(Task):
@@ -8215,7 +8215,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-block-shifting]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-block-shifting]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -8279,7 +8279,7 @@ class ColorCoordinatedBlockShifting(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""guided-block-path"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""guided-block-path"".
 
 """"""
 class BlockInsertion(Task):
@@ -8319,7 +8319,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [guided-block-path]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [guided-block-path]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -8379,7 +8379,7 @@ class GuidedBlockPath(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""mixed-color-block-barrier-insertion"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""mixed-color-block-barrier-insertion"".
 
 """"""
 class BlockInsertion(Task):
@@ -8419,7 +8419,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [mixed-color-block-barrier-insertion]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [mixed-color-block-barrier-insertion]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -8484,7 +8484,7 @@ class MixedColorBlockBarrierInsertion(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""ball-in-bowl-obstacle-course"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""ball-in-bowl-obstacle-course"".
 
 """"""
 class BlockInsertion(Task):
@@ -8524,7 +8524,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [ball-in-bowl-obstacle-course]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [ball-in-bowl-obstacle-course]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -8587,7 +8587,7 @@ class BallInBowlObstacleCourse(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""ball-in-bowl-obstacle-course-new"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""ball-in-bowl-obstacle-course-new"".
 
 """"""
 class BlockInsertion(Task):
@@ -8627,7 +8627,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [ball-in-bowl-obstacle-course-new]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [ball-in-bowl-obstacle-course-new]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -8690,7 +8690,7 @@ class BallInBowlObstacleCourseNew(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-arch-construction"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-arch-construction"".
 
 """"""
 class BlockInsertion(Task):
@@ -8730,7 +8730,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-arch-construction]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-arch-construction]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -8796,7 +8796,7 @@ class ColorCoordinatedArchConstruction(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-zone-arrangement"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-zone-arrangement"".
 
 """"""
 class BlockInsertion(Task):
@@ -8836,7 +8836,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-zone-arrangement]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-zone-arrangement]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -8902,7 +8902,7 @@ class ColorCoordinatedZoneArrangement(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-cylinder-stand-assembly"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-cylinder-stand-assembly"".
 
 """"""
 class BlockInsertion(Task):
@@ -8942,7 +8942,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-cylinder-stand-assembly]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-cylinder-stand-assembly]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -9000,7 +9000,7 @@ class ColorCoordinatedCylinderStandAssembly(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-ball-stacking"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-ball-stacking"".
 
 """"""
 class BlockInsertion(Task):
@@ -9040,7 +9040,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-ball-stacking]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-ball-stacking]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -9112,7 +9112,7 @@ class ColorCoordinatedBallStacking(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coded-blocks-on-corner"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coded-blocks-on-corner"".
 
 """"""
 class BlockInsertion(Task):
@@ -9152,7 +9152,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coded-blocks-on-corner]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coded-blocks-on-corner]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -9215,7 +9215,7 @@ class ColorCodedBlocksOnCorner(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""insertion-in-color-sequenced-zones"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""insertion-in-color-sequenced-zones"".
 
 """"""
 class BlockInsertion(Task):
@@ -9255,7 +9255,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [insertion-in-color-sequenced-zones]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [insertion-in-color-sequenced-zones]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -9312,7 +9312,7 @@ class InsertionInColorSequencedZones(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-zone-stacking"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-zone-stacking"".
 
 """"""
 class BlockInsertion(Task):
@@ -9352,7 +9352,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-zone-stacking]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-zone-stacking]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -9418,7 +9418,7 @@ class ColorCoordinatedZoneStacking(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-cylinder-ball-match"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-cylinder-ball-match"".
 
 """"""
 class BlockInsertion(Task):
@@ -9458,7 +9458,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-cylinder-ball-match]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-cylinder-ball-match]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -9526,7 +9526,7 @@ class ColorCoordinatedCylinderBallMatch(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""multi-level-insertion-and-zone-matching"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""multi-level-insertion-and-zone-matching"".
 
 """"""
 class BlockInsertion(Task):
@@ -9566,7 +9566,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [multi-level-insertion-and-zone-matching]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [multi-level-insertion-and-zone-matching]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -9623,7 +9623,7 @@ class MultiLevelInsertionAndZoneMatching(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-cued-ball-corner-sorting"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-cued-ball-corner-sorting"".
 
 """"""
 class BlockInsertion(Task):
@@ -9663,7 +9663,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-cued-ball-corner-sorting]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-cued-ball-corner-sorting]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -9731,7 +9731,7 @@ class ColorCuedBallCornerSorting(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""cylinder-ring-stack"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""cylinder-ring-stack"".
 
 """"""
 class BlockInsertion(Task):
@@ -9771,7 +9771,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [cylinder-ring-stack]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [cylinder-ring-stack]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -9839,7 +9839,7 @@ class CylinderRingStack(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-coordinated-sphere-on-pallet-pyramid"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-coordinated-sphere-on-pallet-pyramid"".
 
 """"""
 class BlockInsertion(Task):
@@ -9879,7 +9879,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-coordinated-sphere-on-pallet-pyramid]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-coordinated-sphere-on-pallet-pyramid]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -9963,7 +9963,7 @@ class ColorCoordinatedSphereOnPalletPyramid(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-sequenced-sphere-placement"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-sequenced-sphere-placement"".
 
 """"""
 class BlockInsertion(Task):
@@ -10003,7 +10003,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-sequenced-sphere-placement]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-sequenced-sphere-placement]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -10060,7 +10060,7 @@ class ColorSequencedSpherePlacement(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""color-ordered-insertion-new"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""color-ordered-insertion-new"".
 
 """"""
 class BlockInsertion(Task):
@@ -10100,7 +10100,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [color-ordered-insertion-new]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [color-ordered-insertion-new]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -10158,7 +10158,7 @@ class ColorOrderedInsertionNew(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""put-blocks-between-zones"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""put-blocks-between-zones"".
 
 """"""
 class BlockInsertion(Task):
@@ -10198,7 +10198,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [put-blocks-between-zones]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [put-blocks-between-zones]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -10256,7 +10256,7 @@ class PutBlocksBetweenZones(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""put-blues-around-red"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""put-blues-around-red"".
 
 """"""
 class BlockInsertion(Task):
@@ -10296,7 +10296,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [put-blues-around-red]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [put-blues-around-red]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -10350,7 +10350,7 @@ class PlaceBluesAroundRed(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""place-blue-on-line-ends"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""place-blue-on-line-ends"".
 
 """"""
 class BlockInsertion(Task):
@@ -10390,7 +10390,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [place-blue-on-line-ends]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [place-blue-on-line-ends]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -10444,7 +10444,7 @@ class PlaceBlueOnLineEnds(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""ball-on-box-on-container"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""ball-on-box-on-container"".
 
 """"""
 class BlockInsertion(Task):
@@ -10484,7 +10484,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [ball-on-box-on-container]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [ball-on-box-on-container]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -10552,7 +10552,7 @@ class BallOnBoxOnContainer(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""align-rope-along-line"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""align-rope-along-line"".
 
 """"""
 class BlockInsertion(Task):
@@ -10592,7 +10592,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [align-rope-along-line]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [align-rope-along-line]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -10637,7 +10637,7 @@ class AlignRopeAlongLine(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""align-rope-cross-zone"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""align-rope-cross-zone"".
 
 """"""
 class BlockInsertion(Task):
@@ -10677,7 +10677,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [align-rope-cross-zone]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [align-rope-cross-zone]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -10720,7 +10720,7 @@ class AlignRopeCrossZone(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""put-kit-in-bowl"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""put-kit-in-bowl"".
 
 """"""
 class BlockInsertion(Task):
@@ -10760,7 +10760,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [put-kit-in-bowl]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [put-kit-in-bowl]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -10846,7 +10846,7 @@ class PutKitInBowl(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""kit-in-bowl-in-zone"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""kit-in-bowl-in-zone"".
 
 """"""
 class BlockInsertion(Task):
@@ -10886,7 +10886,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [kit-in-bowl-in-zone]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [kit-in-bowl-in-zone]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -10956,7 +10956,7 @@ class KitInBowlInZone(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""move-kit-from-zone-to-cylinder"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""move-kit-from-zone-to-cylinder"".
 
 """"""
 class BlockInsertion(Task):
@@ -10996,7 +10996,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [move-kit-from-zone-to-cylinder]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [move-kit-from-zone-to-cylinder]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
@@ -11073,7 +11073,7 @@ class MoveKitFromZoneToCylinder(Task):
 ```
 
 ###"
-"I will provide you reference code for the task 'stack-block-pyramid' and you can write the code for the task ""move-bowl-from-pallet-to-corner"".
+"I will provide you reference code for the task 'block-insertion' and you can write the code for the task ""move-bowl-from-pallet-to-corner"".
 
 """"""
 class BlockInsertion(Task):
@@ -11113,7 +11113,7 @@ class BlockInsertion(Task):
 """"""
 
 
-Now write the pybullet simulation task class [move-bowl-from-pallet-to-corner]. Provide answers in a python code block starting with ```
+Now write the pybullet simulation task class [move-bowl-from-pallet-to-corner]. Provide answers in a python code block starting with ```python
 ","
 ```python
 import numpy as np
